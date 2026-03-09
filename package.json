@@ -1,0 +1,69 @@
+{
+  "homepage": "https://ahmedadelkhalil.github.io/PRIMECUT/",
+  "name": "primecut",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@formkit/auto-animate": "^0.8.1",
+    "@fortawesome/fontawesome-free": "^7.1.0",
+    "@fortawesome/fontawesome-svg-core": "^7.1.0",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/free-regular-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^7.1.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@popperjs/core": "^2.11.8",
+    "@reduxjs/toolkit": "^2.11.2",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "ajv": "^8.17.1",
+    "ajv-keywords": "^5.1.0",
+    "bootstrap": "^5.3.2",
+    "formik": "^2.4.5",
+    "formkit": "^1.7.2",
+    "leaflet": "^1.9.4",
+    "motion": "^12.23.26",
+    "ramadan-overlay": "^0.1.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-helmet": "^6.1.0",
+    "react-intersection-observer": "^9.5.3",
+    "react-leaflet": "^4.2.1",
+    "react-redux": "^9.0.3",
+    "react-router-dom": "^6.20.1",
+    "react-scripts": "^5.0.1",
+    "react-type-animation": "^3.2.0",
+    "swiper": "^12.0.3",
+    "web-vitals": "^2.1.4",
+    "yup": "^1.7.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}

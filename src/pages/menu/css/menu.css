@@ -1,0 +1,132 @@
+.primecutMenu_container {
+  background-color: #dcd5cf;
+  color: var(--main-color-green);
+}
+.menu_header_left h1,
+.menu_header_right h1 {
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: 500;
+}
+.menu_header_left h1 {
+  font-size: 70px;
+}
+.menu_header_right h1 {
+  font-size: 25px;
+  line-height: 1.6;
+}
+.menu_header_left h1 span {
+  font-size: 35px;
+  padding-bottom: 20px !important;
+}
+.menu_header_right {
+  padding-top: 9px !important;
+}
+.and_section {
+  margin-right: 10px !important;
+  position: relative;
+}
+.menu_header_left .and_section:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: var(--main-color-green);
+  bottom: 0;
+  left: 0;
+}
+.menu_body table {
+  border: 1px solid var(--main-color-green);
+  font-size: 15px;
+}
+.menu_body table tbody tr:nth-child(1) th,
+.menu_body table tbody tr td {
+  padding: 10px 30px !important;
+}
+.menu_body table tbody tr:not(:nth-child(1)) {
+  border-top: 1px solid var(--main-color-green);
+}
+.menu-pro-title {
+  font-weight: 500;
+  font-size: 20px;
+}
+.menu-pro-desc,
+.menu-pro-price-cal {
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 1.5em;
+  height: calc(3em + 10px);
+  overflow: hidden;
+}
+.signature-type {
+  font-size: 30px;
+}
+.category-btns button {
+  border: none;
+  outline: none;
+  margin: 5px !important;
+  padding: 10px !important;
+  position: relative;
+  background: transparent;
+  color: var(--main-color-green);
+  text-transform: uppercase;
+}
+.category-btns button::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  background-color: var(--main-color-green);
+  height: 2px;
+  width: 0;
+  transition: All 0.3s ease;
+  -webkit-transition: All 0.3s ease;
+  -moz-transition: All 0.3s ease;
+  -ms-transition: All 0.3s ease;
+  -o-transition: All 0.3s ease;
+}
+.category-btns button.active:after,
+.category-btns button:hover:after {
+  width: 100%;
+}
+.category-btns button.active {
+  font-weight: 500;
+}
+/* =================== RESPONSIVENESS ===================== */
+@media (max-width: 575px) {
+  .menu_header_left h1 {
+    font-size: 28px;
+  }
+  .menu_header_right h1 {
+    font-size: 13px;
+    line-height: 1.4;
+    margin-left: 20px !important;
+  }
+  .category-btns button {
+    margin: 0 !important;
+    font-size: 12px;
+  }
+  .menu_header_left h1 span {
+    font-size: 17px;
+    padding-bottom: 9px !important;
+  }
+  .signature-type {
+    font-size: 20px;
+  }
+  .menu-pro-title {
+    font-size: 15px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .menu_header_left h1 {
+    font-size: 45px;
+  }
+  .menu_header_right h1 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .menu_header_left h1 {
+    font-size: 60px;
+  }
+}

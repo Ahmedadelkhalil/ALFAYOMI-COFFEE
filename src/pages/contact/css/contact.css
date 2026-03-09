@@ -1,0 +1,117 @@
+.contactPage_container {
+  background-color: #dcd5cf;
+  color: var(--main-color-green);
+}
+.contact-rightSide form ::placeholder {
+  color: gray;
+  font-weight: 300;
+}
+.contact-leftSide {
+  padding: 50px !important;
+}
+.contact-leftSide span {
+  letter-spacing: 2px;
+}
+.contact-rightSide p,
+.contact-leftSide h1 {
+  letter-spacing: 1px;
+}
+.contact-leftSide h1,
+.contact-rightSide form {
+  margin-top: 50px !important;
+}
+.contact-leftSide h1,
+.form_submition_field button {
+  text-transform: uppercase;
+}
+.contact-rightSide {
+  padding: 50px 20px !important;
+}
+.contact-rightSide {
+  text-transform: capitalize;
+}
+.contact-rightSide p {
+  font-size: 12px;
+}
+.contact-rightSide form > div:not(:last-child) {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px !important;
+}
+.contact-rightSide form > div label {
+  margin-bottom: 5px !important;
+}
+.contact-rightSide form > div input,
+.contact-rightSide form > div textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--main-color-green);
+  outline: none;
+  background: transparent;
+  font-weight: 500;
+  caret-color: var(--main-color-green);
+}
+.form_submition_field button {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: fit-content;
+  font-weight: 500;
+  color: var(--main-color-green);
+}
+.form_submition_field button img {
+  width: 20px;
+  margin-left: 10px !important;
+}
+.form_submition_field button:hover img {
+  animation-name: arrowAni;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+@keyframes arrowAni {
+  50% {
+    transform: translateX(-6px);
+    -webkit-transform: translateX(-6px);
+    -moz-transform: translateX(-6px);
+    -ms-transform: translateX(-6px);
+    -o-transform: translateX(-6px);
+  }
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+  .contact-leftSide h1,
+  .contact-rightSide form {
+    margin-top: 10px !important;
+  }
+  .contact-leftSide,
+  .contact-rightSide {
+    padding: 20px !important;
+  }
+  .contact-rightSide p {
+    margin-bottom: 20px !important;
+  }
+}
+.contact-pass-blockField svg {
+  right: 5px;
+  cursor: pointer;
+}
+.leaflet-container {
+  width: 90%;
+  height: 50vh;
+  margin: auto !important;
+  border: 2px solid var(--main-color-green);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}

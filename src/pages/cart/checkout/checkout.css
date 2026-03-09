@@ -1,0 +1,109 @@
+.checkoutPage-container {
+  background-color: #dcd5cf;
+}
+.checkout-PathSec h1 {
+  font-size: 35px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--main-color-green);
+}
+.checkout-PathSec nav .prevLink,
+.checkout-PathSec nav .currLink {
+  text-transform: capitalize;
+}
+.checkout-PathSec nav .prevLink {
+  color: rgb(119, 118, 118);
+}
+.checkout-PathSec nav .currLink {
+  color: var(--main-color-green);
+}
+.checkOut-main-sec {
+  display: flex;
+}
+.checkout-main-leftSide h3,
+.checkout-main-rightSide h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 25px;
+  margin-bottom: 20px !important;
+  color: var(--main-color-green);
+}
+.checkout-main-leftSide form > div {
+  margin-bottom: 10px !important;
+}
+.checkout-main-leftSide input,
+.checkout-main-leftSide textarea {
+  border: 1px solid var(--main-color-green);
+  padding: 4px 10px !important;
+  outline: none;
+  background: transparent;
+  min-width: 300px;
+  width: 100%;
+}
+.checkoutPage-container input::placeholder,
+.checkoutPage-container textarea::placeholder {
+  color: var(--main-color-green);
+}
+.checkout-main-rightSide table {
+  min-width: 450px;
+  width: 100%;
+}
+.checkout-main-rightSide table tr th {
+  text-transform: uppercase;
+  color: var(--main-color-green);
+}
+.checkout-main-rightSide table tr,
+.checkout-main-rightSide table tr th {
+  border-bottom: 1px solid var(--main-color-green);
+  padding-bottom: 5px !important;
+}
+.checkout-order-sec table tr img {
+  width: 50px;
+}
+.checkout-order-sec {
+  overflow: auto !important;
+}
+.checkout-order-sec::-webkit-scrollbar {
+  height: 5px;
+}
+.checkout-order-sec table tr button {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--main-color-green);
+  font-size: 13px;
+}
+.checkout-order-sec table tr:last-child td {
+  padding-bottom: 10px !important;
+}
+.checkout-order-qty-sec span {
+  margin: 5px !important;
+  font-size: 15px;
+  font-weight: 500;
+}
+.check-order-del-sec {
+  padding-top: 20px !important;
+  text-transform: capitalize;
+  color: var(--main-color-green);
+}
+.check-order-total-sec .t-title {
+  color: rgb(107, 107, 107);
+  font-weight: 500;
+}
+.check-order-total-sec .t-cost {
+  color: var(--main-color-green);
+  font-weight: 900;
+}
+.checkout-bottom-nav-sec button {
+  border: none;
+  outline: none;
+  background: transparent;
+  text-transform: uppercase;
+  font-size: 16px;
+  border-bottom: 1px solid var(--main-color-green);
+  font-weight: 900;
+}
+.checkout-bottom-nav-sec button a {
+  color: var(--main-color-green);
+}

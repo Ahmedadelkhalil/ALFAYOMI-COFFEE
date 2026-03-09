@@ -1,0 +1,50 @@
+[
+  {
+    "id": "Home_Slider_Img_01",
+    "slogan": "Alfayomi Coffee since 1938",
+    "adsTitle": "Ramadan vibes is enjoyable at AlFayomi",
+    "btnTitle": "find out more",
+    "btnLink": "/menu",
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/home-slider-1.jpg"
+  },
+  {
+    "id": "Home_Slider_Img_02",
+    "slogan": "Alfayomi Coffee since 1938",
+    "adsTitle": "Taste Life in Every Sip",
+    "btnTitle": "find out more",
+    "btnLink": "/menu",
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/home-slider-2.jpg"
+  },
+  {
+    "id": "Home_Slider_Img_03",
+    "slogan": "Alfayomi Coffee since 1938",
+    "adsTitle": "More Espresso, Less Depresso",
+    "btnTitle": "find out more",
+    "btnLink": "/menu",
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/home-slider-3.jpg"
+  },
+  {
+    "id": "Home_Slider_Img_04",
+    "slogan": "Alfayomi Coffee since 1938",
+    "adsTitle": "Your daily dose of cool.",
+    "btnTitle": "find out more",
+    "btnLink": "/menu",
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/home-slider-4.jpg"
+  },
+  {
+    "id": "Home_Slider_Img_05",
+    "slogan": "Alfayomi Coffee since 1938",
+    "adsTitle": "Three ingredients. One perfect moment.",
+    "btnTitle": "find out more",
+    "btnLink": "/menu",
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/home-slider-5.jpg"
+  },
+  {
+    "id": "Home_Slider_Img_06",
+    "slogan": "Alfayomi Coffee since 1938",
+    "adsTitle": "Your daily dose of instant magic.",
+    "btnTitle": "find out more",
+    "btnLink": "/menu",
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/home-slider-6.jpg"
+  }
+]

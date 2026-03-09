@@ -1,0 +1,29 @@
+[
+  {
+    "id": "44",
+    "title": "Iced Caramel Macchiato",
+    "price": 75,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/Iced%20caramel%20macchiato.png",
+    "category": "DRINKS",
+    "sizeM": "75",
+    "sizeL": "85",
+    "desc": "Strong espresso with creamy caramel and layer of soft whipped cream."
+  },
+  {
+    "id": "13",
+    "title": "Arabic Coffee",
+    "price": 214,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/ArabicCoffeeCan.jpg",
+    "category": "CAN",
+    "weight": "1/4 KG",
+    "desc": "Ground coffee with cardamom, cloves, ginger and cinnamon."
+  },
+  {
+    "id": "27",
+    "title": "Copper Alfayomi crown Burner size 2",
+    "price": 220,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Copper-Alfayomi-crown-Burner-size2.jpg",
+    "category": "COFFEE TOOLS",
+    "desc": ""
+  }
+]

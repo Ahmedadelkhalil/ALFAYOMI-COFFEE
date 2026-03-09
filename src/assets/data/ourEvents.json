@@ -1,0 +1,16 @@
+[
+  {
+    "cardDesign": "imgLeft",
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/99fe92dcdace4648d1d8e29fe6bf3a83d813a4a5/Coffeefestival.jpg",
+    "title": "COFFEE FESTIVAL 2021",
+    "p_01": "Al Fayomi Coffee was the official sponsor of the Coffee Festival 2021, featuring a presence by the Ambassador of Indonesia.",
+    "p_02": "This event highlighted the company's commitment to the coffee industry and showcased Indonesian coffee culture."
+  },
+  {
+    "cardDesign": "imgRight",
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/CafexExpo3.webp",
+    "title": "CAFEX EXPO 2023",
+    "p_01": "Al Fayomi Coffee is a prominent exhibitor at Cafex (and related HORECA expos) in Egypt, specializing in supplying cafes and restaurants with premium products like specialty, French, instant, and Arabian coffee.",
+    "p_02": "They have showcased their brand with custom designed stands, focusing on providing high-quality, specialized coffee solutions for the hospitality industry."
+  }
+]

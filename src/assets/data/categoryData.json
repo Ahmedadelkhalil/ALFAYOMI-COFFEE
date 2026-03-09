@@ -1,0 +1,61 @@
+[
+  {
+    "id": "44",
+    "title": "Iced Caramel Macchiato",
+    "price": 75,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/1869071ad66c00bc8184bfc3b24479990720569e/Iced%20caramel%20macchiato.jpg",
+    "category": "DRINKS",
+    "sizeM": "75",
+    "sizeL": "85",
+    "desc": "Strong espresso with creamy caramel and layer of soft whipped cream."
+  },
+  {
+    "id": "13",
+    "title": "Arabic Coffee",
+    "price": 214,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/ArabicCoffeeCan.jpg",
+    "category": "CAN",
+    "weight": "1/4 KG",
+    "desc": "Ground coffee with cardamom, cloves, ginger and cinnamon."
+  },
+  {
+    "id": "27",
+    "title": "Copper Alfayomi crown Burner size 2",
+    "price": 220,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Copper-Alfayomi-crown-Burner-size2.jpg",
+    "category": "COFFEE TOOLS",
+    "desc": ""
+  },
+  {
+    "id": "46",
+    "title": "Hot Chocolate",
+    "price": 75,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/Hot%20Chocolate.jpg",
+    "category": "DRINKS",
+    "sizeM": "75",
+    "sizeL": "85",
+    "desc": "A mixture of fresh milk with the finest rich chocolate."
+  },
+  {
+    "id": "33",
+    "title": "Tiramisu",
+    "price": 55,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/5c62c75e47e7c9eb5f0f9c5e7e82f2187b859263/tiramisu.jpg",
+    "category": "DESSERTS",
+    "fat": 43,
+    "saturates": 7,
+    "sugars": 64,
+    "salt": 8,
+    "kcal": 611,
+    "desc": "rich, creamy, and indulgent nature, emphasizing the blend of coffee, mascarpone, and cocoa that delivers a pick-me-up experience."
+  },
+  {
+    "id": "47",
+    "title": "French Hazelnut",
+    "price": 175,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/f522adff6f1290e940dcc239179add67caba89a1/PacketFrenchHazelnut.jpg",
+    "category": "CAN",
+    "weight": "1/4 KG",
+    "desc": "Rich coffee blend and delicious creamer in your favorite hazelnut flavor."
+  }
+]

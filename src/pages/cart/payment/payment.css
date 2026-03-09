@@ -1,0 +1,120 @@
+.paymentPage-container {
+  background-color: #dcd5cf;
+}
+.payment-topNav-sec h1 {
+  text-transform: uppercase;
+  color: var(--main-color-green);
+  margin-bottom: 10px !important;
+  letter-spacing: 1px;
+}
+.payment-topNav-sec button {
+  border: none;
+  outline: none;
+  background: none;
+  text-transform: capitalize;
+}
+.payment-topNav-sec .prevLink a {
+  color: rgb(119, 118, 118);
+  letter-spacing: 0.5px;
+}
+.payment-topNav-sec .currLink a {
+  color: var(--main-color-green);
+  letter-spacing: 0.5px;
+}
+/* =================================== */
+.payment-main-leftSide .payment-contactDetails h2,
+.payment-method h2,
+.payment-main-rightSide h2 {
+  text-transform: uppercase;
+  color: var(--main-color-green);
+  margin-bottom: 15px !important;
+}
+.customerInfo-block-sec {
+  border: 1px solid var(--main-color-green);
+  padding: 0 15px !important;
+}
+.customerInfo-block-sec > div:not(:last-child) {
+  border-bottom: 1px solid var(--main-color-green);
+}
+.customerInfo-block-sec > div > div {
+  margin: 8px 0 !important;
+}
+.customerInfo-block-sec > div > div p:nth-child(1) {
+  width: 60px !important;
+}
+.customerInfo-block-sec > div > div input {
+  border: none;
+  outline: none;
+  background: rgba(173, 194, 164, 0.867);
+  color: var(--main-color-green);
+  font-weight: 500;
+  font-size: 15px;
+  text-align: center;
+}
+.customerInfo-block-sec > div button {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--main-color-green);
+  text-transform: capitalize;
+}
+.payment-method form > div {
+  border: 1px solid var(--main-color-green);
+  margin-bottom: 10px !important;
+  padding: 10px 15px !important;
+}
+.payment-method form > div input {
+  cursor: pointer;
+  margin-right: 20px !important;
+}
+.payment-method form > div label {
+  cursor: pointer;
+}
+.payment-method form > div label p:nth-child(2) svg {
+  margin: 0 5px !important;
+}
+/* ================================= */
+.payment-pro-table-container table tr th {
+  text-transform: uppercase;
+  padding-bottom: 5px !important;
+}
+.payment-pro-table-container table tr {
+  border-bottom: 1px solid var(--main-color-green);
+  color: var(--main-color-green);
+}
+.payment-pro-table-container img {
+  width: 50px;
+}
+.payment-pro-table-container table button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.payment-pro-table-container table button svg {
+  font-size: 13px;
+  color: var(--main-color-green);
+}
+.payment-pro-table-container table .payment-table-qty-sec span {
+  margin: 0 5px !important;
+  font-weight: 500;
+}
+.payment-pro-table-container {
+  min-width: 400px;
+}
+.payment-pro-table-holder::-webkit-scrollbar {
+  height: 5px;
+}
+.payment-t-title {
+  color: rgb(107, 107, 107);
+}
+.payment-btm-nav button {
+  border: none;
+  outline: none;
+  background: transparent;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--main-color-green);
+}
+.payment-btm-nav button a {
+  color: var(--main-color-green);
+  font-weight: 900;
+}

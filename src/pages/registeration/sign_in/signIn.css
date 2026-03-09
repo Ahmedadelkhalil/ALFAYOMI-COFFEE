@@ -1,0 +1,178 @@
+.signIn-container {
+  background-image: url("../../../assets/sources/slider/slider_06sdf.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.signIn-container:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #cdc7bad4;
+  top: 0;
+  left: 0;
+}
+.signIn-leftSide h3 {
+  text-transform: uppercase;
+  color: var(--main-color-green);
+  letter-spacing: 1px;
+}
+.signIn-leftSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.signIn-leftSide h3:nth-child(1) {
+  margin-bottom: 20px !important;
+  font-size: 40px;
+}
+.signIn-leftSide h3:nth-child(2) {
+  font-size: 22px;
+}
+.signIn-rightSide {
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+.signIn-form {
+  max-width: 600px !important;
+  border: 2px solid var(--main-color-green);
+  padding: 20px 10px !important;
+}
+.signIn-rightSide h4 {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--main-color-green);
+}
+.signIn-inputs-container {
+  margin: 20px 0 10px !important;
+}
+.signIn-inputs-container input {
+  border: none;
+  outline: none;
+  padding: 7px 10px !important;
+  border: 1px solid var(--main-color-green);
+}
+.signIn-inputs-container > div:nth-child(1) {
+  margin-bottom: 10px !important;
+}
+.signIn-inputs-container > div:nth-child(2) div {
+  position: relative;
+}
+.signIn-inputs-container > div:nth-child(2) div button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.signIn-inputs-container > div:nth-child(2) div button svg {
+  font-size: 16px;
+  color: var(--main-color-green);
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.signIn-inputs-container input::placeholder {
+  color: var(--main-color-green);
+}
+.signIn-rightSide form > div:nth-child(2) {
+  margin-bottom: 20px !important;
+}
+.signIn-rightSide form > div:nth-child(2) > div input {
+  margin-right: 10px !important;
+}
+.signIn-rightSide form > div:nth-child(2) > div label,
+.signIn-rightSide form > div:nth-child(2) > div input {
+  cursor: pointer;
+}
+.signIn-rightSide form > div:nth-child(2) button {
+  text-decoration: underline;
+}
+.signIn-rightSide form > div:nth-child(2) button,
+.signIn-rightSide form > div:nth-child(3) button {
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+}
+.signIn-rightSide form > div:nth-child(2) button {
+  background: transparent;
+}
+.signIn-rightSide form > div:nth-child(2) button a {
+  color: var(--main-color-green);
+}
+.signIn-rightSide form > div:nth-child(3) > button,
+.signIn-rightSide form > div:nth-child(3) > a button {
+  text-transform: uppercase;
+  padding: 10px 0 !important;
+  font-weight: 500;
+}
+.signIn-rightSide form > div:nth-child(3) > a button {
+  width: 100%;
+  background-color: #21372bcc;
+  color: var(--main-color-white);
+}
+.signIn-rightSide form > div:nth-child(3) > button {
+  margin-bottom: 20px !important;
+  background-color: var(--main-color-green);
+  color: var(--main-color-white);
+}
+.signIn-rightSide form > div:nth-child(3) > button,
+.signIn-rightSide form > div:nth-child(3) > a button {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.signIn-rightSide form > div:nth-child(3) > button:hover {
+  background-color: #21372bcc;
+}
+.signIn-rightSide form > div:nth-child(3) > a button:hover {
+  background-color: var(--main-color-green);
+}
+/* ---------------- RESPONSIVENESS ---------------- */
+/* XS DEVICES */
+@media (max-width: 350px) {
+  .signIn-form {
+    width: 300px !important;
+  }
+  .signIn-leftSide h3:nth-child(2) {
+    font-size: 18px;
+  }
+}
+@media (min-width: 351px) and (max-width: 400px) {
+  .signIn-form {
+    width: 345px !important;
+  }
+  .signIn-leftSide h3:nth-child(2) {
+    font-size: 18px;
+  }
+}
+@media (min-width: 401px) and (max-width: 576px) {
+  .signIn-form {
+    width: 400px !important;
+  }
+  .signIn-leftSide h3:nth-child(2) {
+    font-size: 22px;
+  }
+}
+/* SM DEVICES */
+@media (min-width: 577px) and (max-width: 767px) {
+  .signIn-form {
+    width: 500px !important;
+  }
+  .signIn-leftSide h3:nth-child(2) {
+    font-size: 22px;
+  }
+}
+/* MD DEVICES AND ABOVE */
+@media (min-width: 768px) {
+  .signIn-form {
+    width: 600px !important;
+  }
+  .signIn-leftSide h3:nth-child(2) {
+    font-size: 25px;
+  }
+}

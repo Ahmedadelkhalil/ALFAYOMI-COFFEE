@@ -1,0 +1,124 @@
+.register_container {
+  background-image: url("../../../assets/sources/slider/slider_06sdf.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.register_container:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #cdc7bad4;
+  top: 0;
+  left: 0;
+}
+.register_container > div {
+  z-index: 1;
+}
+.registerTitle_container {
+  text-transform: uppercase;
+  margin-bottom: 20px !important;
+  color: var(--main-color-green);
+}
+.registerTitle_container h1:nth-child(1) {
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+.registerForm_container {
+  width: 600px;
+  border: 2px solid var(--main-color-green);
+  padding: 20px 10px !important;
+}
+.registerForm_container form > div {
+  margin-bottom: 10px !important;
+}
+.registerForm_container input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 7px 10px !important;
+  border: 1px solid var(--main-color-green);
+}
+.registerForm_container input::placeholder {
+  color: var(--main-color-green);
+}
+.registerForm_container a {
+  text-decoration: underline !important;
+}
+.registerForm_container .signUp_btn button {
+  border: 1px solid var(--main-color-green);
+  outline: none;
+  background-color: var(--main-color-green);
+  color: var(--main-color-white);
+  text-transform: uppercase;
+  width: 200px;
+  padding: 10px 5px !important;
+  transition: All 0.3s ease;
+  -webkit-transition: All 0.3s ease;
+  -moz-transition: All 0.3s ease;
+  -ms-transition: All 0.3s ease;
+  -o-transition: All 0.3s ease;
+  font-weight: 500;
+}
+.registerForm_container .signUp_btn button:hover {
+  background-color: #21372bcc;
+}
+.registerForm_container div:nth-child(4) {
+  position: relative !important;
+}
+.registerForm_container div:nth-child(4) button {
+  position: absolute !important;
+  right: 10px !important;
+  top: 8px !important;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.registerForm_container div:nth-child(4) button svg {
+  color: var(--main-color-green);
+}
+/* ------------------ RESPONSIVENESS ------------------ */
+/* XS DEVICES */
+@media (max-width: 350px) {
+  .registerForm_container {
+    width: 300px !important;
+  }
+  .registerTitle_container h1:nth-child(2) {
+    font-size: 18px;
+  }
+}
+@media (min-width: 351px) and (max-width: 400px) {
+  .registerForm_container {
+    width: 345px !important;
+  }
+  .registerTitle_container h1:nth-child(2) {
+    font-size: 18px;
+  }
+}
+@media (min-width: 401px) and (max-width: 576px) {
+  .registerForm_container {
+    width: 400px !important;
+  }
+  .registerTitle_container h1:nth-child(2) {
+    font-size: 22px;
+  }
+}
+/* SM DEVICES */
+@media (min-width: 577px) and (max-width: 767px) {
+  .registerForm_container {
+    width: 500px !important;
+  }
+  .registerTitle_container h1:nth-child(2) {
+    font-size: 22px;
+  }
+}
+/* MD DEVICES AND ABOVE */
+@media (min-width: 768px) {
+  .registerForm_container {
+    width: 600px !important;
+  }
+  .registerTitle_container h1:nth-child(2) {
+    font-size: 25px;
+  }
+}

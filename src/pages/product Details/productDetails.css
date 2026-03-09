@@ -1,0 +1,201 @@
+.productDetails_container {
+  background-image: url("https://alfayomicoffee.com/wp-content/uploads/2026/02/Cover2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.productDetails_container:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #d8b799d2;
+  top: 0;
+  left: 0;
+}
+.productDetails_container > div {
+  z-index: 1;
+}
+.productDetails_backToMenu_sec button {
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  margin: 20px 0 0 20px !important;
+  background: transparent;
+}
+.productDetails_backToMenu_sec button a {
+  color: var(--main-labels-color);
+  font-weight: 500;
+}
+.productDetails_backToMenu_sec button a svg {
+  margin-right: 7px !important;
+}
+.productDetails_leftSide {
+  text-align: end;
+  padding-right: 30px !important;
+}
+.productDetails_leftSide img {
+  width: 270px;
+  height: 270px;
+}
+@media (max-width: 767px) {
+  .productDetails_leftSide {
+    padding-right: 0 !important;
+  }
+  .productDetails_leftSide img {
+    width: 200px !important;
+    height: 200px !important;
+  }
+}
+.productDetails_rightSide > div {
+  padding: 0 20px !important;
+}
+.productDetails_rightSide > div > h3 {
+  color: var(--main-labels-color);
+  letter-spacing: 1px;
+  margin-bottom: 5px !important;
+}
+.productDetails_ingredient_sec > p {
+  margin-right: 10px !important;
+  text-transform: capitalize;
+  color: var(--main-labels-color);
+}
+.productDetails_ingredient_sec > p span {
+  font-weight: 500;
+}
+.productDetails_ingredient_sec {
+  margin-bottom: 15px !important;
+}
+.productDetails_description_sec p {
+  text-transform: capitalize;
+}
+.productDetails_description_sec {
+  margin-bottom: 15px !important;
+  max-width: 400px;
+}
+.productDetails_quantity_sec button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--main-labels-color);
+  outline: none;
+  background: transparent;
+  font-size: 15px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.productDetails_quantity_sec button svg {
+  color: var(--main-labels-color);
+}
+.productDetails_quantity_sec > span {
+  margin-right: 10px !important;
+  text-transform: capitalize;
+}
+.productDetails_quantity_sec > div span {
+  margin: 0 10px !important;
+}
+.productDetails_quantity_sec {
+  margin-bottom: 15px !important;
+  color: var(--main-labels-color);
+}
+.productDetails_price_addCart_sec span {
+  margin-right: 10px !important;
+  color: var(--main-labels-color);
+  font-weight: 500;
+  font-size: 20px;
+}
+.productDetails_price_addCart_sec button {
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  background: var(--main-labels-color);
+  color: var(--main-color-white);
+  padding: 7px 20px !important;
+  letter-spacing: 1px;
+  transition: All 0.3s ease;
+  -webkit-transition: All 0.3s ease;
+  -moz-transition: All 0.3s ease;
+  -ms-transition: All 0.3s ease;
+  -o-transition: All 0.3s ease;
+}
+.productDetails_price_addCart_sec button:hover {
+  background-color: var(--bg-dark-brown);
+}
+.relatedProducts_MainTitleSec {
+  margin-top: 60px !important;
+}
+.relatedProducts_MainTitleSec h2 {
+  position: relative;
+  width: fit-content;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  letter-spacing: 1px;
+}
+.relatedProducts_MainTitleSec h2:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  background-color: var(--main-labels-color);
+  width: 100%;
+  height: 2px;
+}
+.relatedProducts_slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.relatedProducts_slider img {
+  border: 1px solid var(--main-labels-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  padding: 10px !important;
+  margin-bottom: 20px !important;
+}
+.relatedProducts_slider p {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--main-labels-color);
+  letter-spacing: 1px;
+}
+
+@media (max-width: 639px) {
+  .swiper-slide {
+    margin-right: 0 !important;
+  }
+}
+@media (min-width: 640px) {
+  .swiper-slide {
+    margin-right: 10px !important;
+  }
+}
+@media (max-width: 692px) {
+  .relatedProducts_slider img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+}
+@media (min-width: 693px) {
+  .relatedProducts_slider img {
+    width: 180px !important;
+    height: 180px !important;
+  }
+}
+@media (min-width: 991px) {
+  .relatedProducts_slider img {
+    width: 200px !important;
+    height: 200px !important;
+  }
+}
+@media (min-width: 1500px) {
+  .relatedProducts_slider img {
+    width: 220px !important;
+    height: 220px !important;
+  }
+}

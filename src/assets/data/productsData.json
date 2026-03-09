@@ -1,0 +1,492 @@
+[
+  {
+    "id": "1",
+    "title": "Mix Roast Master",
+    "price": 132,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/Mix%20Roast%20Master.jpg",
+    "category": "TURKISH COFFEE",
+    "tomn": 132,
+    "rob3": 264,
+    "nos": 528,
+    "kilo": 1056,
+    "desc": "A blend of the finest coffee beans gives a cup with a heavy, smooth texture."
+  },
+  {
+    "id": "2",
+    "title": "Mix Super",
+    "price": 105,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/Mix%20Super.jpg",
+    "category": "TURKISH COFFEE",
+    "tomn": 105,
+    "rob3": 210,
+    "nos": 420,
+    "kilo": 840,
+    "desc": "A blend of robusta and arabica beans rich in caffeine for those who work in the morning."
+  },
+  {
+    "id": "3",
+    "title": "Mix Special",
+    "price": 120,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/Mix%20Special.jpg",
+    "category": "TURKISH COFFEE",
+    "tomn": 120,
+    "rob3": 240,
+    "nos": 480,
+    "kilo": 960,
+    "desc": "A balanced blend of the finest coffee beans gives a cup with a rich flavor."
+  },
+  {
+    "id": "4",
+    "title": "Pure Super",
+    "price": 85,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/Pure%20Super.jpg",
+    "category": "TURKISH COFFEE",
+    "tomn": 85,
+    "rob3": 170,
+    "nos": 340,
+    "kilo": 680,
+    "desc": "A blend of robusta and arabica beans rich in caffeine for those who work in the morning."
+  },
+  {
+    "id": "5",
+    "title": "Pure Special",
+    "price": 100,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/Pure%20Special.jpg",
+    "category": "TURKISH COFFEE",
+    "tomn": 100,
+    "rob3": 200,
+    "nos": 400,
+    "kilo": 800,
+    "desc": "A balanced blend of the finest coffee beans gives a cup with a rich flavor."
+  },
+  {
+    "id": "6",
+    "title": "Pure Mocha Blend",
+    "price": 150,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/Pure%20Mocha%20Blend.jpg",
+    "category": "TURKISH COFFEE",
+    "tomn": 150,
+    "rob3": 300,
+    "nos": 600,
+    "kilo": 1200,
+    "desc": "will be edit & change soon"
+  },
+  {
+    "id": "7",
+    "title": "Mix Mocha Blend",
+    "price": 170,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/Mix%20Mocha%20Blend.jpg",
+    "category": "TURKISH COFFEE",
+    "tomn": 170,
+    "rob3": 340,
+    "nos": 680,
+    "kilo": 1360,
+    "desc": "will be edit & change soon"
+  },
+  {
+    "id": "8",
+    "title": "Pure Roast Master Blend",
+    "price": 112,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/Pure%20Roast%20Master%20Blend.jpg",
+    "category": "TURKISH COFFEE",
+    "tomn": 112,
+    "rob3": 224,
+    "nos": 448,
+    "kilo": 896,
+    "desc": "A blend of the finest coffee beans gives a cup with a heavy, smooth texture."
+  },
+  {
+    "id": "9",
+    "title": "Pure Ethiopian",
+    "price": 110,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/c91f98dd01e58709d9cce77a3a33efa942c40167/Pure%20Ethiopian.jpg",
+    "category": "SINGLE ORIGIN COFFEE",
+    "tomn": 110,
+    "rob3": 220,
+    "nos": 440,
+    "kilo": 880,
+    "desc": "Arabica coffee beans are characterized by a strong aroma and acidic flavor."
+  },
+  {
+    "id": "10",
+    "title": "Mix Ethiopian",
+    "price": 130,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/c91f98dd01e58709d9cce77a3a33efa942c40167/Mix%20Ethiopian.jpg",
+    "category": "SINGLE ORIGIN COFFEE",
+    "tomn": 130,
+    "rob3": 260,
+    "nos": 520,
+    "kilo": 1040,
+    "desc": "Arabica coffee beans are characterized by a strong aroma and acidic flavor."
+  },
+  {
+    "id": "11",
+    "title": "Pure Colombian",
+    "price": 110,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/c91f98dd01e58709d9cce77a3a33efa942c40167/Colombian%20Plain%20Coffee.jpg",
+    "category": "SINGLE ORIGIN COFFEE",
+    "tomn": 110,
+    "rob3": 220,
+    "nos": 440,
+    "kilo": 880,
+    "desc": "Arabica coffee beans with a light, balanced flavor."
+  },
+  {
+    "id": "12",
+    "title": "Mix Colombian",
+    "price": 130,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/c91f98dd01e58709d9cce77a3a33efa942c40167/Colombian%20Mixed%20Coffee.jpg",
+    "category": "SINGLE ORIGIN COFFEE",
+    "tomn": 130,
+    "rob3": 260,
+    "nos": 520,
+    "kilo": 1040,
+    "desc": "Arabica coffee beans with a light, balanced flavor."
+  },
+  {
+    "id": "13",
+    "title": "Arabic Coffee",
+    "price": 214,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/ArabicCoffeeCan.jpg",
+    "category": "CAN",
+    "weight": "1/4 KG",
+    "desc": "Ground coffee with cardamom, cloves, ginger and cinnamon."
+  },
+  {
+    "id": "14",
+    "title": "Green Coffee",
+    "price": 213,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/GreenCoffeeCan.jpg",
+    "category": "CAN",
+    "weight": "1/4 KG",
+    "desc": "Natural, unroasted coffee beans contain a high percentage of antioxidants."
+  },
+  {
+    "id": "15",
+    "title": "French Hazelnut",
+    "price": 175,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/HazelnutFrenchCan.jpg",
+    "category": "CAN",
+    "weight": "1/4 KG",
+    "desc": "Rich coffee blend and delicious creamer in your favorite hazelnut flavor."
+  },
+  {
+    "id": "16",
+    "title": "Instant coffee classic",
+    "price": 110,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/e84d8425558283e797650af7db8d40f2d3e4979a/instantCoffeeCan.jpg",
+    "category": "CAN",
+    "weight": "100 G",
+    "desc": "Instant coffee with a classic flavor."
+  },
+  {
+    "id": "17",
+    "title": "Chocolate Powder Classic",
+    "price": 175,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/e84d8425558283e797650af7db8d40f2d3e4979a/PowderChocolateCan.jpg",
+    "category": "CAN",
+    "weight": "1/4 KG",
+    "desc": "Rich and delicious taste for the perfect hot chocolate drink."
+  },
+  {
+    "id": "18",
+    "title": "Moka pot",
+    "price": 235,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Moka-Pot.jpg",
+    "category": "COFFEE TOOLS",
+    "desc": ""
+  },
+  {
+    "id": "19",
+    "title": "Kanka single",
+    "price": 85,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Kanka-single.jpg",
+    "category": "COFFEE TOOLS",
+    "desc": ""
+  },
+  {
+    "id": "20",
+    "title": "Kanka double",
+    "price": 100,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Kanka-double.jpg",
+    "category": "COFFEE TOOLS",
+    "desc": ""
+  },
+  {
+    "id": "21",
+    "title": "Cup",
+    "price": 95,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Cup.jpg",
+    "category": "COFFEE TOOLS",
+    "desc": ""
+  },
+  {
+    "id": "22",
+    "title": "Mug",
+    "price": 105,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Mug.jpg",
+    "category": "COFFEE TOOLS",
+    "desc": ""
+  },
+  {
+    "id": "23",
+    "title": "Coffee press wood 350 ml",
+    "price": 190,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Coffee-press-wood-350ml.jpg",
+    "category": "COFFEE TOOLS",
+    "desc": ""
+  },
+  {
+    "id": "24",
+    "title": "Coffeee Press Stainless 350 ML",
+    "price": 165,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Coffeee-Press-Stainless-350ML.jpg",
+    "category": "COFFEE TOOLS",
+    "desc": ""
+  },
+  {
+    "id": "25",
+    "title": "Coffee press plastic 350 ML",
+    "price": 135,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Coffee-press-plastic-350ML.jpg",
+    "category": "COFFEE TOOLS",
+    "desc": ""
+  },
+  {
+    "id": "26",
+    "title": "Copper Alfayomi crown Burner size 1",
+    "price": 180,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Copper-Alfayomi-crown-Burner-size1.jpg",
+    "category": "COFFEE TOOLS",
+    "desc": ""
+  },
+  {
+    "id": "27",
+    "title": "Copper Alfayomi crown Burner size 2",
+    "price": 220,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Copper-Alfayomi-crown-Burner-size2.jpg",
+    "category": "COFFEE TOOLS",
+    "desc": ""
+  },
+  {
+    "id": "28",
+    "title": "Copper Alfayomi Burner size 1",
+    "price": 150,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Copper-Alfayomi-Burner-size1.jpg",
+    "category": "COFFEE TOOLS",
+    "desc": ""
+  },
+  {
+    "id": "29",
+    "title": "Copper Alfayomi Burner size 2",
+    "price": 180,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Copper-Alfayomi-Burner-size2.jpg",
+    "category": "COFFEE TOOLS",
+    "desc": ""
+  },
+  {
+    "id": "30",
+    "title": "Al fayomi Thermos Flask",
+    "price": 85,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Al-fayomi-Thermos-Flask.jpg",
+    "category": "COFFEE TOOLS",
+    "desc": ""
+  },
+  {
+    "id": "31",
+    "title": "AlFayomi digital thermos",
+    "price": 95,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/AlFayomi-digital-thermos.jpg",
+    "category": "COFFEE TOOLS",
+    "desc": ""
+  },
+  {
+    "id": "32",
+    "title": "RASPBERRY CHEESECAKE",
+    "price": 65,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/5c62c75e47e7c9eb5f0f9c5e7e82f2187b859263/RASPBERRY%20CHEESECAKE.png",
+    "category": "DESSERTS",
+    "fat": 24,
+    "saturates": 9,
+    "sugars": 25,
+    "salt": 2,
+    "kcal": 374,
+    "desc": "It's the perfect combination - raspberries and cream! A tart and sweet raspberry topping cuts the richness of cheesecake."
+  },
+  {
+    "id": "33",
+    "title": "Tiramisu",
+    "price": 55,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/5c62c75e47e7c9eb5f0f9c5e7e82f2187b859263/tiramisu.jpg",
+    "category": "DESSERTS",
+    "fat": 43,
+    "saturates": 7,
+    "sugars": 64,
+    "salt": 8,
+    "kcal": 611,
+    "desc": "rich, creamy, and indulgent nature, emphasizing the blend of coffee, mascarpone, and cocoa that delivers a pick-me-up experience."
+  },
+  {
+    "id": "34",
+    "title": "Chocolate Fudge Brownie Ice Cream",
+    "price": 46,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/5c62c75e47e7c9eb5f0f9c5e7e82f2187b859263/chocolate%20fudge%20ice%20cream.png",
+    "category": "DESSERTS",
+    "fat": 34,
+    "saturates": 4,
+    "sugars": 44,
+    "salt": 7,
+    "kcal": 533,
+    "desc": "Hunks of fudgy brownie pieces in every bite, offering a delightful texture contrast."
+  },
+  {
+    "id": "35",
+    "title": "PINK SPRINKLED DOUNT",
+    "price": 20,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/5c62c75e47e7c9eb5f0f9c5e7e82f2187b859263/Pink%20Sprinkled%20Donut.jpg",
+    "category": "DESSERTS",
+    "fat": 24,
+    "saturates": 7,
+    "sugars": 50,
+    "salt": 4,
+    "kcal": 280,
+    "desc": "Frosted with pink icing and covered with rainbow sprinkles for a pop of color and crunch"
+  },
+  {
+    "id": "36",
+    "title": "CHOCOLATE CHIP COOKIES",
+    "price": 23,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/5c62c75e47e7c9eb5f0f9c5e7e82f2187b859263/CHOCOLATE%20CHIP%20COOKIES.webp",
+    "category": "DESSERTS",
+    "fat": 23,
+    "saturates": 9,
+    "sugars": 40,
+    "salt": 2,
+    "kcal": 180,
+    "desc": "Every moment is better with a chocolate chip cookie in hand."
+  },
+  {
+    "id": "37",
+    "title": "FRUIT TINGLE CUPCAKE",
+    "price": 27,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/5c62c75e47e7c9eb5f0f9c5e7e82f2187b859263/Fruit%20Tingle%20Cupcake.jpg",
+    "category": "DESSERTS",
+    "fat": 29,
+    "saturates": 3,
+    "sugars": 60,
+    "salt": 1,
+    "kcal": 310,
+    "desc": "Indulge in the sweet pleasure of nutella."
+  },
+  {
+    "id": "38",
+    "title": "BUTTERED PANCAKE",
+    "price": 30,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/5c62c75e47e7c9eb5f0f9c5e7e82f2187b859263/Buttered%20Pancake.jpg",
+    "category": "DESSERTS",
+    "fat": 20,
+    "saturates": 1,
+    "sugars": 30,
+    "salt": 4,
+    "kcal": 230,
+    "desc": "Every moment is better with our special honey pancake."
+  },
+  {
+    "id": "39",
+    "title": "LOTUS CHEESECAKE",
+    "price": 70,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/5c62c75e47e7c9eb5f0f9c5e7e82f2187b859263/CHEESECAKE%20(LOTUS).webp",
+    "category": "DESSERTS",
+    "fat": 28,
+    "saturates": 12,
+    "sugars": 30,
+    "salt": 2,
+    "kcal": 218,
+    "desc": "Nothing says happiness like a slice of Louts cheesecake."
+  },
+  {
+    "id": "40",
+    "title": "BLUEBERRY CHEESECAKE",
+    "price": 60,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/5c62c75e47e7c9eb5f0f9c5e7e82f2187b859263/BLUEBERRY%20CHEESECAKE.webp",
+    "category": "DESSERTS",
+    "fat": 23,
+    "saturates": 8,
+    "sugars": 20,
+    "salt": 3,
+    "kcal": 326,
+    "desc": "You can't buy happiness, but you can buy blueberry cheesecake."
+  },
+  {
+    "id": "41",
+    "title": "White Chocolate Donut",
+    "price": 75,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/5c62c75e47e7c9eb5f0f9c5e7e82f2187b859263/White%20Chocolate%20Donut.jpg",
+    "category": "DESSERTS",
+    "fat": 34,
+    "saturates": 3,
+    "sugars": 18,
+    "salt": 2,
+    "kcal": 218,
+    "desc": "Donuts are proof that good things come in small packages."
+  },
+  {
+    "id": "42",
+    "title": "Cappuccino",
+    "price": 62,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/Cappucino.png",
+    "category": "DRINKS",
+    "sizeM": "62",
+    "sizeL": "75",
+    "desc": "Espresso coffee with hot milk mixed with lots of creamy foam."
+  },
+  {
+    "id": "43",
+    "title": "Special Plain Coffee",
+    "price": 30,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/special-plain-coffee.jpg",
+    "category": "DRINKS",
+    "sizeS": "30",
+    "sizeD": "40",
+    "desc": "A balanced blend of the finest coffee beans produces a cup with a rich flavor."
+  },
+  {
+    "id": "44",
+    "title": "Iced Caramel Macchiato",
+    "price": 75,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/1869071ad66c00bc8184bfc3b24479990720569e/Iced%20caramel%20macchiato.jpg",
+    "category": "DRINKS",
+    "sizeM": "75",
+    "sizeL": "85",
+    "desc": "Strong espresso with creamy caramel and layer of soft whipped cream."
+  },
+  {
+    "id": "45",
+    "title": "Iced Chocolate Milk",
+    "price": 60,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/Iced-Chocolate-Milk.jpg",
+    "category": "DRINKS",
+    "sizeM": "60",
+    "sizeL": "70",
+    "desc": "A rich chocolate milk drink with delicious caramel to create the blend you love."
+  },
+  {
+    "id": "46",
+    "title": "Hot Chocolate",
+    "price": 75,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/Hot%20Chocolate.jpg",
+    "category": "DRINKS",
+    "sizeM": "75",
+    "sizeL": "85",
+    "desc": "A mixture of fresh milk with the finest rich chocolate."
+  },
+  {
+    "id": "47",
+    "title": "French Hazelnut",
+    "price": 175,
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/f522adff6f1290e940dcc239179add67caba89a1/PacketFrenchHazelnut.jpg",
+    "category": "CAN",
+    "weight": "1/4 KG",
+    "desc": "Rich coffee blend and delicious creamer in your favorite hazelnut flavor."
+  }
+]
