@@ -162,7 +162,8 @@
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/ArabicCoffeeCan.jpg",
     "category": "CAN",
     "weight": "1/4 KG",
-    "desc": "Ground coffee with cardamom, cloves, ginger and cinnamon."
+    "desc": "Ground coffee with cardamom, cloves, ginger and cinnamon.",
+    "lightroastavailable": "no"
   },
   {
     "id": "14",
@@ -171,7 +172,8 @@
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/GreenCoffeeCan.jpg",
     "category": "CAN",
     "weight": "1/4 KG",
-    "desc": "Natural, unroasted coffee beans contain a high percentage of antioxidants."
+    "desc": "Natural, unroasted coffee beans contain a high percentage of antioxidants.",
+    "lightroastavailable": "no"
   },
   {
     "id": "15",
@@ -180,7 +182,8 @@
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/HazelnutFrenchCan.jpg",
     "category": "CAN",
     "weight": "1/4 KG",
-    "desc": "Rich coffee blend and delicious creamer in your favorite hazelnut flavor."
+    "desc": "Rich coffee blend and delicious creamer in your favorite hazelnut flavor.",
+    "lightroastavailable": "no"
   },
   {
     "id": "16",
@@ -189,7 +192,8 @@
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/e84d8425558283e797650af7db8d40f2d3e4979a/instantCoffeeCan.jpg",
     "category": "CAN",
     "weight": "100 G",
-    "desc": "Instant coffee with a classic flavor."
+    "desc": "Instant coffee with a classic flavor.",
+    "lightroastavailable": "no"
   },
   {
     "id": "17",
@@ -198,7 +202,8 @@
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/e84d8425558283e797650af7db8d40f2d3e4979a/PowderChocolateCan.jpg",
     "category": "CAN",
     "weight": "1/4 KG",
-    "desc": "Rich and delicious taste for the perfect hot chocolate drink."
+    "desc": "Rich and delicious taste for the perfect hot chocolate drink.",
+    "lightroastavailable": "no"
   },
   {
     "id": "18",
@@ -206,7 +211,8 @@
     "price": 235,
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Moka-Pot.jpg",
     "category": "COFFEE TOOLS",
-    "desc": ""
+    "desc": "",
+    "lightroastavailable": "no"
   },
   {
     "id": "19",
@@ -214,7 +220,8 @@
     "price": 85,
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Kanka-single.jpg",
     "category": "COFFEE TOOLS",
-    "desc": ""
+    "desc": "",
+    "lightroastavailable": "no"
   },
   {
     "id": "20",
@@ -222,7 +229,8 @@
     "price": 100,
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Kanka-double.jpg",
     "category": "COFFEE TOOLS",
-    "desc": ""
+    "desc": "",
+    "lightroastavailable": "no"
   },
   {
     "id": "21",
@@ -230,7 +238,8 @@
     "price": 95,
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Cup.jpg",
     "category": "COFFEE TOOLS",
-    "desc": ""
+    "desc": "",
+    "lightroastavailable": "no"
   },
   {
     "id": "22",
@@ -238,7 +247,8 @@
     "price": 105,
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Mug.jpg",
     "category": "COFFEE TOOLS",
-    "desc": ""
+    "desc": "",
+    "lightroastavailable": "no"
   },
   {
     "id": "23",
@@ -246,7 +256,8 @@
     "price": 190,
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Coffee-press-wood-350ml.jpg",
     "category": "COFFEE TOOLS",
-    "desc": ""
+    "desc": "",
+    "lightroastavailable": "no"
   },
   {
     "id": "24",
@@ -254,7 +265,8 @@
     "price": 165,
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Coffeee-Press-Stainless-350ML.jpg",
     "category": "COFFEE TOOLS",
-    "desc": ""
+    "desc": "",
+    "lightroastavailable": "no"
   },
   {
     "id": "25",
@@ -262,7 +274,8 @@
     "price": 135,
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Coffee-press-plastic-350ML.jpg",
     "category": "COFFEE TOOLS",
-    "desc": ""
+    "desc": "",
+    "lightroastavailable": "no"
   },
   {
     "id": "26",
@@ -270,7 +283,8 @@
     "price": 180,
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Copper-Alfayomi-crown-Burner-size1.jpg",
     "category": "COFFEE TOOLS",
-    "desc": ""
+    "desc": "",
+    "lightroastavailable": "no"
   },
   {
     "id": "27",
@@ -278,7 +292,8 @@
     "price": 220,
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Copper-Alfayomi-crown-Burner-size2.jpg",
     "category": "COFFEE TOOLS",
-    "desc": ""
+    "desc": "",
+    "lightroastavailable": "no"
   },
   {
     "id": "28",
@@ -286,7 +301,8 @@
     "price": 150,
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Copper-Alfayomi-Burner-size1.jpg",
     "category": "COFFEE TOOLS",
-    "desc": ""
+    "desc": "",
+    "lightroastavailable": "no"
   },
   {
     "id": "29",
@@ -294,7 +310,8 @@
     "price": 180,
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Copper-Alfayomi-Burner-size2.jpg",
     "category": "COFFEE TOOLS",
-    "desc": ""
+    "desc": "",
+    "lightroastavailable": "no"
   },
   {
     "id": "30",
@@ -302,7 +319,8 @@
     "price": 85,
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Al-fayomi-Thermos-Flask.jpg",
     "category": "COFFEE TOOLS",
-    "desc": ""
+    "desc": "",
+    "lightroastavailable": "no"
   },
   {
     "id": "31",
@@ -310,7 +328,8 @@
     "price": 95,
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/AlFayomi-digital-thermos.jpg",
     "category": "COFFEE TOOLS",
-    "desc": ""
+    "desc": "",
+    "lightroastavailable": "no"
   },
   {
     "id": "32",
@@ -323,7 +342,8 @@
     "sugars": 25,
     "salt": 2,
     "kcal": 374,
-    "desc": "It's the perfect combination - raspberries and cream! A tart and sweet raspberry topping cuts the richness of cheesecake."
+    "desc": "It's the perfect combination - raspberries and cream! A tart and sweet raspberry topping cuts the richness of cheesecake.",
+    "lightroastavailable": "no"
   },
   {
     "id": "33",
@@ -336,7 +356,8 @@
     "sugars": 64,
     "salt": 8,
     "kcal": 611,
-    "desc": "rich, creamy, and indulgent nature, emphasizing the blend of coffee, mascarpone, and cocoa that delivers a pick-me-up experience."
+    "desc": "rich, creamy, and indulgent nature, emphasizing the blend of coffee, mascarpone, and cocoa that delivers a pick-me-up experience.",
+    "lightroastavailable": "no"
   },
   {
     "id": "34",
@@ -349,7 +370,8 @@
     "sugars": 44,
     "salt": 7,
     "kcal": 533,
-    "desc": "Hunks of fudgy brownie pieces in every bite, offering a delightful texture contrast."
+    "desc": "Hunks of fudgy brownie pieces in every bite, offering a delightful texture contrast.",
+    "lightroastavailable": "no"
   },
   {
     "id": "35",
@@ -362,7 +384,8 @@
     "sugars": 50,
     "salt": 4,
     "kcal": 280,
-    "desc": "Frosted with pink icing and covered with rainbow sprinkles for a pop of color and crunch"
+    "desc": "Frosted with pink icing and covered with rainbow sprinkles for a pop of color and crunch",
+    "lightroastavailable": "no"
   },
   {
     "id": "36",
@@ -375,7 +398,8 @@
     "sugars": 40,
     "salt": 2,
     "kcal": 180,
-    "desc": "Every moment is better with a chocolate chip cookie in hand."
+    "desc": "Every moment is better with a chocolate chip cookie in hand.",
+    "lightroastavailable": "no"
   },
   {
     "id": "37",
@@ -388,7 +412,8 @@
     "sugars": 60,
     "salt": 1,
     "kcal": 310,
-    "desc": "Indulge in the sweet pleasure of nutella."
+    "desc": "Indulge in the sweet pleasure of nutella.",
+    "lightroastavailable": "no"
   },
   {
     "id": "38",
@@ -401,7 +426,8 @@
     "sugars": 30,
     "salt": 4,
     "kcal": 230,
-    "desc": "Every moment is better with our special honey pancake."
+    "desc": "Every moment is better with our special honey pancake.",
+    "lightroastavailable": "no"
   },
   {
     "id": "39",
@@ -414,7 +440,8 @@
     "sugars": 30,
     "salt": 2,
     "kcal": 218,
-    "desc": "Nothing says happiness like a slice of Louts cheesecake."
+    "desc": "Nothing says happiness like a slice of Louts cheesecake.",
+    "lightroastavailable": "no"
   },
   {
     "id": "40",
@@ -427,7 +454,8 @@
     "sugars": 20,
     "salt": 3,
     "kcal": 326,
-    "desc": "You can't buy happiness, but you can buy blueberry cheesecake."
+    "desc": "You can't buy happiness, but you can buy blueberry cheesecake.",
+    "lightroastavailable": "no"
   },
   {
     "id": "41",
@@ -440,7 +468,8 @@
     "sugars": 18,
     "salt": 2,
     "kcal": 218,
-    "desc": "Donuts are proof that good things come in small packages."
+    "desc": "Donuts are proof that good things come in small packages.",
+    "lightroastavailable": "no"
   },
   {
     "id": "42",
@@ -450,7 +479,8 @@
     "category": "DRINKS",
     "sizeM": "62",
     "sizeL": "75",
-    "desc": "Espresso coffee with hot milk mixed with lots of creamy foam."
+    "desc": "Espresso coffee with hot milk mixed with lots of creamy foam.",
+    "lightroastavailable": "no"
   },
   {
     "id": "43",
@@ -460,7 +490,8 @@
     "category": "DRINKS",
     "sizeS": "30",
     "sizeD": "40",
-    "desc": "A balanced blend of the finest coffee beans produces a cup with a rich flavor."
+    "desc": "A balanced blend of the finest coffee beans produces a cup with a rich flavor.",
+    "lightroastavailable": "no"
   },
   {
     "id": "44",
@@ -470,7 +501,8 @@
     "category": "DRINKS",
     "sizeM": "75",
     "sizeL": "85",
-    "desc": "Strong espresso with creamy caramel and layer of soft whipped cream."
+    "desc": "Strong espresso with creamy caramel and layer of soft whipped cream.",
+    "lightroastavailable": "no"
   },
   {
     "id": "45",
@@ -480,7 +512,8 @@
     "category": "DRINKS",
     "sizeM": "60",
     "sizeL": "70",
-    "desc": "A rich chocolate milk drink with delicious caramel to create the blend you love."
+    "desc": "A rich chocolate milk drink with delicious caramel to create the blend you love.",
+    "lightroastavailable": "no"
   },
   {
     "id": "46",
@@ -490,7 +523,8 @@
     "category": "DRINKS",
     "sizeM": "75",
     "sizeL": "85",
-    "desc": "A mixture of fresh milk with the finest rich chocolate."
+    "desc": "A mixture of fresh milk with the finest rich chocolate.",
+    "lightroastavailable": "no"
   },
   {
     "id": "47",
@@ -499,6 +533,7 @@
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/f522adff6f1290e940dcc239179add67caba89a1/PacketFrenchHazelnut.jpg",
     "category": "CAN",
     "weight": "1/4 KG",
-    "desc": "Rich coffee blend and delicious creamer in your favorite hazelnut flavor."
+    "desc": "Rich coffee blend and delicious creamer in your favorite hazelnut flavor.",
+    "lightroastavailable": "no"
   }
 ]

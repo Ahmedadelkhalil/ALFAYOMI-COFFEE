@@ -64,7 +64,7 @@ const LargeCard = ({ largeProductCardInfo }) => {
             className="main-color-green text-uppercase"
           >
             {largeProductCardInfo.name}{" "}
-            {`${largeProductCardInfo?.lightroastavailable}`}
+            {`${largeProductCardInfo.lightroastavailable}`}
           </NavLink>
         </h4>
         {largeProductCardInfo.category === "DESSERTS" ? (
