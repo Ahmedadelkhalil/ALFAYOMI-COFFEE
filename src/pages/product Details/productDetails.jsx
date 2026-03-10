@@ -39,7 +39,15 @@ const ProductDetails = () => {
   useEffect(() => {
     if (location.state) {
       setTopHalfProInfo(Object.values(location.state.from)[0]);
-      setSelectedSize("tomn");
+      setSelectedSize(
+        topHalfProInfo?.type === "beverageml"
+          ? "sizeM"
+          : topHalfProInfo?.type === "beveragesd"
+            ? "sizeS"
+            : topHalfProInfo?.type === "can"
+              ? "can 1/4 KG"
+              : "tomn",
+      );
       setSelectedRoast(topHalfProInfo?.lra === "yes" ? "light" : "medium");
     } else {
       let regex = /:.*/gi;
@@ -50,10 +58,24 @@ const ProductDetails = () => {
       setTopHalfProInfo(
         productsData.find((pro) => pro.title === proDetailsNameExtraction),
       );
-      setSelectedSize("tomn");
+      setSelectedSize(
+        topHalfProInfo?.type === "beverageml"
+          ? "sizeM"
+          : topHalfProInfo?.type === "beveragesd"
+            ? "sizeS"
+            : topHalfProInfo?.type === "can"
+              ? "can 1/4 KG"
+              : "tomn",
+      );
       setSelectedRoast("light");
     }
-  }, [state, location, productsData, topHalfProInfo?.lra]);
+  }, [
+    state,
+    location,
+    productsData,
+    topHalfProInfo?.lra,
+    topHalfProInfo?.type,
+  ]);
 
   // ALERT
   const [alertMsg, setAlertMsg] = useState("");
@@ -70,7 +92,15 @@ const ProductDetails = () => {
     nos: "1/2 KG",
     kilo: "1 KG",
   };
-  const [selectedSize, setSelectedSize] = useState("tomn");
+  const [selectedSize, setSelectedSize] = useState(
+    topHalfProInfo?.type === "beverageml"
+      ? "sizeM"
+      : topHalfProInfo?.type === "beveragesd"
+        ? "sizeS"
+        : topHalfProInfo?.type === "can"
+          ? "can 1/4 KG"
+          : "tomn",
+  );
   const [selectedRoast, setSelectedRoast] = useState(
     topHalfProInfo?.lra === "yes" ? "light" : "medium",
   );
@@ -125,94 +155,170 @@ const ProductDetails = () => {
                 </h3>
                 {/* ============================COFFEE SIZE======================== */}
                 <div className="productDetails_ingredient_sec d-flex align-items-center">
-                  <div className="radio-group d-flex">
-                    <span>Size : </span>
-                    <div className="mx-1">
-                      <input
-                        type="radio"
-                        id="tomn"
-                        name="size"
-                        value="tomn"
-                        checked={selectedSize === "tomn"}
-                        onChange={handleSizeChange}
-                      />
-                      <label htmlFor="tomn">1/8 KG</label>
-                    </div>
-                    <div className="mx-1">
-                      <input
-                        type="radio"
-                        id="rob3"
-                        name="size"
-                        value="rob3"
-                        checked={selectedSize === "rob3"}
-                        onChange={handleSizeChange}
-                      />
-                      <label htmlFor="rob3">1/4 KG</label>
-                    </div>
-                    <div className="mx-1">
-                      <input
-                        type="radio"
-                        id="nos"
-                        name="size"
-                        value="nos"
-                        checked={selectedSize === "nos"}
-                        onChange={handleSizeChange}
-                      />
-                      <label htmlFor="nos">1/2 KG</label>
-                    </div>
-                    <div className="mx-1">
-                      <input
-                        type="radio"
-                        id="kilo"
-                        name="size"
-                        value="kilo"
-                        checked={selectedSize === "kilo"}
-                        onChange={handleSizeChange}
-                      />
-                      <label htmlFor="kilo">1 KG</label>
-                    </div>
+                  <div className="radio-group d-flex mt-2">
+                    {topHalfProInfo?.type === "desserts" ? null : (
+                      <span>Size : </span>
+                    )}
+                    {topHalfProInfo?.type === "coffee" ? (
+                      <>
+                        <div className="mx-1">
+                          <input
+                            type="radio"
+                            id="tomn"
+                            name="size"
+                            value="tomn"
+                            checked={selectedSize === "tomn"}
+                            onChange={handleSizeChange}
+                          />
+                          <label htmlFor="tomn">1/8 KG</label>
+                        </div>
+                        <div className="mx-1">
+                          <input
+                            type="radio"
+                            id="rob3"
+                            name="size"
+                            value="rob3"
+                            checked={selectedSize === "rob3"}
+                            onChange={handleSizeChange}
+                          />
+                          <label htmlFor="rob3">1/4 KG</label>
+                        </div>
+                        <div className="mx-1">
+                          <input
+                            type="radio"
+                            id="nos"
+                            name="size"
+                            value="nos"
+                            checked={selectedSize === "nos"}
+                            onChange={handleSizeChange}
+                          />
+                          <label htmlFor="nos">1/2 KG</label>
+                        </div>
+                        <div className="mx-1">
+                          <input
+                            type="radio"
+                            id="kilo"
+                            name="size"
+                            value="kilo"
+                            checked={selectedSize === "kilo"}
+                            onChange={handleSizeChange}
+                          />
+                          <label htmlFor="kilo">1 KG</label>
+                        </div>
+                      </>
+                    ) : topHalfProInfo?.type === "beverageml" ? (
+                      <>
+                        <div className="mx-1">
+                          <input
+                            type="radio"
+                            id="sizeM"
+                            name="size"
+                            value="sizeM"
+                            checked={selectedSize === "sizeM"}
+                            onChange={handleSizeChange}
+                          />
+                          <label htmlFor="sizeM">Medium</label>
+                        </div>
+                        <div className="mx-1">
+                          <input
+                            type="radio"
+                            id="sizeL"
+                            name="size"
+                            value="sizeL"
+                            checked={selectedSize === "sizeL"}
+                            onChange={handleSizeChange}
+                          />
+                          <label htmlFor="sizeL">Large</label>
+                        </div>
+                      </>
+                    ) : topHalfProInfo?.type === "beveragesd" ? (
+                      <>
+                        <div className="mx-1">
+                          <input
+                            type="radio"
+                            id="sizeS"
+                            name="size"
+                            value="sizeS"
+                            checked={selectedSize === "sizeS"}
+                            onChange={handleSizeChange}
+                          />
+                          <label htmlFor="sizeS">Single</label>
+                        </div>
+                        <div className="mx-1">
+                          <input
+                            type="radio"
+                            id="sizeD"
+                            name="size"
+                            value="sizeD"
+                            checked={selectedSize === "sizeD"}
+                            onChange={handleSizeChange}
+                          />
+                          <label htmlFor="sizeD">Double</label>
+                        </div>
+                      </>
+                    ) : topHalfProInfo?.type === "can" ? (
+                      <>
+                        <div className="mx-1">
+                          <input
+                            type="radio"
+                            id="can 1/4 KG"
+                            name="size"
+                            value="can 1/4 KG"
+                            checked={selectedSize === "can 1/4 KG"}
+                            onChange={handleSizeChange}
+                          />
+                          <label htmlFor="can 1/4 KG">1/4 KG</label>
+                        </div>
+                      </>
+                    ) : null}
                   </div>
                 </div>
                 {/* ============================================================= */}
                 <div className="productDetails_ingredient_sec d-flex align-items-center">
                   <div className="radio-group d-flex">
-                    <span>Roast : </span>
-                    {topHalfProInfo?.lra === "yes" ? (
-                      <div className="mx-1 ">
-                        <input
-                          type="radio"
-                          id="light"
-                          name="roast"
-                          value="light"
-                          checked={selectedRoast === "light"}
-                          onChange={handleRoastChange}
-                        />
-                        <label htmlFor="light">Light</label>
-                      </div>
-                    ) : null}
-
-                    <div className="mx-1">
-                      <input
-                        type="radio"
-                        id="medium"
-                        name="roast"
-                        value="medium"
-                        checked={selectedRoast === "medium"}
-                        onChange={handleRoastChange}
-                      />
-                      <label htmlFor="medium">Medium</label>
-                    </div>
-                    <div className="mx-1">
-                      <input
-                        type="radio"
-                        id="dark"
-                        name="roast"
-                        value="dark"
-                        checked={selectedRoast === "dark"}
-                        onChange={handleRoastChange}
-                      />
-                      <label htmlFor="dark">Dark</label>
-                    </div>
+                    {topHalfProInfo?.type === "beverageml" ||
+                    topHalfProInfo?.type === "beveragesd" ||
+                    topHalfProInfo?.type === "can" ||
+                    topHalfProInfo?.type === "desserts" ? null : (
+                      <>
+                        <span>Roast : </span>
+                        {topHalfProInfo?.lra === "yes" ? (
+                          <div className="mx-1 ">
+                            <input
+                              type="radio"
+                              id="light"
+                              name="roast"
+                              value="light"
+                              checked={selectedRoast === "light"}
+                              onChange={handleRoastChange}
+                            />
+                            <label htmlFor="light">Light</label>
+                          </div>
+                        ) : null}
+                        <div className="mx-1">
+                          <input
+                            type="radio"
+                            id="medium"
+                            name="roast"
+                            value="medium"
+                            checked={selectedRoast === "medium"}
+                            onChange={handleRoastChange}
+                          />
+                          <label htmlFor="medium">Medium</label>
+                        </div>
+                        <div className="mx-1">
+                          <input
+                            type="radio"
+                            id="dark"
+                            name="roast"
+                            value="dark"
+                            checked={selectedRoast === "dark"}
+                            onChange={handleRoastChange}
+                          />
+                          <label htmlFor="dark">Dark</label>
+                        </div>
+                      </>
+                    )}
                   </div>
                 </div>
                 {/* ==================================================================== */}
@@ -244,7 +350,7 @@ const ProductDetails = () => {
                   </div>
                 </div>
                 <div className="productDetails_price_addCart_sec">
-                  <span>{`${topHalfProInfo?.[selectedSize]} L.E`}</span>
+                  <span>{`${topHalfProInfo?.type === "can" || topHalfProInfo?.type === "desserts" ? topHalfProInfo?.price : topHalfProInfo?.[selectedSize]} L.E`}</span>
                   <button
                     onClick={() => {
                       dispatch(
@@ -332,7 +438,12 @@ const ProductDetails = () => {
                       rob3: product.rob3,
                       nos: product.nos,
                       kilo: product.kilo,
+                      sizeM: product.sizeM,
+                      sizeL: product.sizeL,
+                      sizeS: product.sizeS,
+                      sizeD: product.sizeD,
                       lra: product.lra,
+                      type: product.type,
                     };
                     return (
                       <SwiperSlide key={product.id}>

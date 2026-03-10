@@ -51,6 +51,7 @@ const ProductCategory = ({ cat, bannerLabel }) => {
     objectsName[i].price = productOfSameCategory[i]?.price;
     objectsName[i].category = productOfSameCategory[i]?.category;
     objectsName[i].lra = productOfSameCategory[i]?.lra;
+    objectsName[i].type = productOfSameCategory[i]?.type;
   }
 
   const categoryTitle = `${bannerLabel}`;
