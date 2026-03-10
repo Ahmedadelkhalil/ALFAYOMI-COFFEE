@@ -172,12 +172,10 @@ const ProductDetails = () => {
                   </div>
                 </div>
                 {/* ============================================================= */}
-                {/* =========================COFFEE ROAST============================ */}
                 <div className="productDetails_ingredient_sec d-flex align-items-center">
                   <div className="radio-group d-flex">
                     <span>Roast : </span>
-                    <span>{`${topHalfProInfo?.lightRoast}`}</span>
-                    {topHalfProInfo?.lightRoast === true ? (
+                    {topHalfProInfo?.lightroastavailable === "yes" ? (
                       <div className="mx-1 ">
                         <input
                           type="radio"
@@ -334,7 +332,7 @@ const ProductDetails = () => {
                       rob3: product.rob3,
                       nos: product.nos,
                       kilo: product.kilo,
-                      lightRoast: product.lightRoast,
+                      lightroastavailable: product.lightroastavailable,
                     };
                     return (
                       <SwiperSlide key={product.id}>
