@@ -10,7 +10,8 @@
     "nos": 528,
     "kilo": 1056,
     "desc": "A blend of the finest coffee beans gives a cup with a heavy, smooth texture.",
-    "lra": "yes"
+    "lra": "yes",
+    "type": "coffee"
   },
   {
     "id": "2",
@@ -23,7 +24,8 @@
     "nos": 420,
     "kilo": 840,
     "desc": "A blend of robusta and arabica beans rich in caffeine for those who work in the morning.",
-    "lra": "yes"
+    "lra": "yes",
+    "type": "coffee"
   },
   {
     "id": "3",
@@ -36,7 +38,8 @@
     "nos": 480,
     "kilo": 960,
     "desc": "A balanced blend of the finest coffee beans gives a cup with a rich flavor.",
-    "lra": "yes"
+    "lra": "yes",
+    "type": "coffee"
   },
   {
     "id": "4",
@@ -49,7 +52,8 @@
     "nos": 340,
     "kilo": 680,
     "desc": "A blend of robusta and arabica beans rich in caffeine for those who work in the morning.",
-    "lra": "yes"
+    "lra": "yes",
+    "type": "coffee"
   },
   {
     "id": "5",
@@ -62,7 +66,8 @@
     "nos": 400,
     "kilo": 800,
     "desc": "A balanced blend of the finest coffee beans gives a cup with a rich flavor.",
-    "lra": "yes"
+    "lra": "yes",
+    "type": "coffee"
   },
   {
     "id": "6",
@@ -75,7 +80,8 @@
     "nos": 600,
     "kilo": 1200,
     "desc": "will be edit & change soon",
-    "lra": "no"
+    "lra": "no",
+    "type": "coffee"
   },
   {
     "id": "7",
@@ -88,7 +94,8 @@
     "nos": 680,
     "kilo": 1360,
     "desc": "will be edit & change soon",
-    "lra": "no"
+    "lra": "no",
+    "type": "coffee"
   },
   {
     "id": "8",
@@ -101,7 +108,8 @@
     "nos": 448,
     "kilo": 896,
     "desc": "A blend of the finest coffee beans gives a cup with a heavy, smooth texture.",
-    "lra": "yes"
+    "lra": "yes",
+    "type": "coffee"
   },
   {
     "id": "9",
@@ -114,7 +122,8 @@
     "nos": 440,
     "kilo": 880,
     "desc": "Arabica coffee beans are characterized by a strong aroma and acidic flavor.",
-    "lra": "no"
+    "lra": "no",
+    "type": "coffee"
   },
   {
     "id": "10",
@@ -127,7 +136,8 @@
     "nos": 520,
     "kilo": 1040,
     "desc": "Arabica coffee beans are characterized by a strong aroma and acidic flavor.",
-    "lra": "no"
+    "lra": "no",
+    "type": "coffee"
   },
   {
     "id": "11",
@@ -140,7 +150,8 @@
     "nos": 440,
     "kilo": 880,
     "desc": "Arabica coffee beans with a light, balanced flavor.",
-    "lra": "no"
+    "lra": "no",
+    "type": "coffee"
   },
   {
     "id": "12",
@@ -153,7 +164,8 @@
     "nos": 520,
     "kilo": 1040,
     "desc": "Arabica coffee beans with a light, balanced flavor.",
-    "lra": "no"
+    "lra": "no",
+    "type": "coffee"
   },
   {
     "id": "13",
@@ -163,7 +175,8 @@
     "category": "CAN",
     "weight": "1/4 KG",
     "desc": "Ground coffee with cardamom, cloves, ginger and cinnamon.",
-    "lra": "no"
+    "lra": "no",
+    "type": "can"
   },
   {
     "id": "14",
@@ -173,7 +186,8 @@
     "category": "CAN",
     "weight": "1/4 KG",
     "desc": "Natural, unroasted coffee beans contain a high percentage of antioxidants.",
-    "lra": "no"
+    "lra": "no",
+    "type": "can"
   },
   {
     "id": "15",
@@ -183,7 +197,8 @@
     "category": "CAN",
     "weight": "1/4 KG",
     "desc": "Rich coffee blend and delicious creamer in your favorite hazelnut flavor.",
-    "lra": "no"
+    "lra": "no",
+    "type": "can"
   },
   {
     "id": "16",
@@ -193,7 +208,8 @@
     "category": "CAN",
     "weight": "100 G",
     "desc": "Instant coffee with a classic flavor.",
-    "lra": "no"
+    "lra": "no",
+    "type": "can"
   },
   {
     "id": "17",
@@ -203,7 +219,8 @@
     "category": "CAN",
     "weight": "1/4 KG",
     "desc": "Rich and delicious taste for the perfect hot chocolate drink.",
-    "lra": "no"
+    "lra": "no",
+    "type": "can"
   },
   {
     "id": "18",
@@ -212,7 +229,8 @@
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Moka-Pot.jpg",
     "category": "COFFEE TOOLS",
     "desc": "",
-    "lra": "no"
+    "lra": "no",
+    "type": "coffee tools"
   },
   {
     "id": "19",
@@ -221,7 +239,8 @@
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Kanka-single.jpg",
     "category": "COFFEE TOOLS",
     "desc": "",
-    "lra": "no"
+    "lra": "no",
+    "type": "coffee tools"
   },
   {
     "id": "20",
@@ -230,7 +249,8 @@
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Kanka-double.jpg",
     "category": "COFFEE TOOLS",
     "desc": "",
-    "lra": "no"
+    "lra": "no",
+    "type": "coffee tools"
   },
   {
     "id": "21",
@@ -239,7 +259,8 @@
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Cup.jpg",
     "category": "COFFEE TOOLS",
     "desc": "",
-    "lra": "no"
+    "lra": "no",
+    "type": "coffee tools"
   },
   {
     "id": "22",
@@ -248,7 +269,8 @@
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Mug.jpg",
     "category": "COFFEE TOOLS",
     "desc": "",
-    "lra": "no"
+    "lra": "no",
+    "type": "coffee tools"
   },
   {
     "id": "23",
@@ -257,7 +279,8 @@
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Coffee-press-wood-350ml.jpg",
     "category": "COFFEE TOOLS",
     "desc": "",
-    "lra": "no"
+    "lra": "no",
+    "type": "coffee tools"
   },
   {
     "id": "24",
@@ -266,7 +289,8 @@
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Coffeee-Press-Stainless-350ML.jpg",
     "category": "COFFEE TOOLS",
     "desc": "",
-    "lra": "no"
+    "lra": "no",
+    "type": "coffee tools"
   },
   {
     "id": "25",
@@ -275,7 +299,8 @@
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Coffee-press-plastic-350ML.jpg",
     "category": "COFFEE TOOLS",
     "desc": "",
-    "lra": "no"
+    "lra": "no",
+    "type": "coffee tools"
   },
   {
     "id": "26",
@@ -284,7 +309,8 @@
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Copper-Alfayomi-crown-Burner-size1.jpg",
     "category": "COFFEE TOOLS",
     "desc": "",
-    "lra": "no"
+    "lra": "no",
+    "type": "coffee tools"
   },
   {
     "id": "27",
@@ -293,7 +319,8 @@
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Copper-Alfayomi-crown-Burner-size2.jpg",
     "category": "COFFEE TOOLS",
     "desc": "",
-    "lra": "no"
+    "lra": "no",
+    "type": "coffee tools"
   },
   {
     "id": "28",
@@ -302,7 +329,8 @@
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Copper-Alfayomi-Burner-size1.jpg",
     "category": "COFFEE TOOLS",
     "desc": "",
-    "lra": "no"
+    "lra": "no",
+    "type": "coffee tools"
   },
   {
     "id": "29",
@@ -311,7 +339,8 @@
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Copper-Alfayomi-Burner-size2.jpg",
     "category": "COFFEE TOOLS",
     "desc": "",
-    "lra": "no"
+    "lra": "no",
+    "type": "coffee tools"
   },
   {
     "id": "30",
@@ -320,7 +349,8 @@
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Al-fayomi-Thermos-Flask.jpg",
     "category": "COFFEE TOOLS",
     "desc": "",
-    "lra": "no"
+    "lra": "no",
+    "type": "coffee tools"
   },
   {
     "id": "31",
@@ -329,7 +359,8 @@
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/AlFayomi-digital-thermos.jpg",
     "category": "COFFEE TOOLS",
     "desc": "",
-    "lra": "no"
+    "lra": "no",
+    "type": "coffee tools"
   },
   {
     "id": "32",
@@ -343,7 +374,8 @@
     "salt": 2,
     "kcal": 374,
     "desc": "It's the perfect combination - raspberries and cream! A tart and sweet raspberry topping cuts the richness of cheesecake.",
-    "lra": "no"
+    "lra": "no",
+    "type": "desserts"
   },
   {
     "id": "33",
@@ -357,7 +389,8 @@
     "salt": 8,
     "kcal": 611,
     "desc": "rich, creamy, and indulgent nature, emphasizing the blend of coffee, mascarpone, and cocoa that delivers a pick-me-up experience.",
-    "lra": "no"
+    "lra": "no",
+    "type": "desserts"
   },
   {
     "id": "34",
@@ -371,7 +404,8 @@
     "salt": 7,
     "kcal": 533,
     "desc": "Hunks of fudgy brownie pieces in every bite, offering a delightful texture contrast.",
-    "lra": "no"
+    "lra": "no",
+    "type": "desserts"
   },
   {
     "id": "35",
@@ -385,7 +419,8 @@
     "salt": 4,
     "kcal": 280,
     "desc": "Frosted with pink icing and covered with rainbow sprinkles for a pop of color and crunch",
-    "lra": "no"
+    "lra": "no",
+    "type": "desserts"
   },
   {
     "id": "36",
@@ -399,7 +434,8 @@
     "salt": 2,
     "kcal": 180,
     "desc": "Every moment is better with a chocolate chip cookie in hand.",
-    "lra": "no"
+    "lra": "no",
+    "type": "desserts"
   },
   {
     "id": "37",
@@ -413,7 +449,8 @@
     "salt": 1,
     "kcal": 310,
     "desc": "Indulge in the sweet pleasure of nutella.",
-    "lra": "no"
+    "lra": "no",
+    "type": "desserts"
   },
   {
     "id": "38",
@@ -427,7 +464,8 @@
     "salt": 4,
     "kcal": 230,
     "desc": "Every moment is better with our special honey pancake.",
-    "lra": "no"
+    "lra": "no",
+    "type": "desserts"
   },
   {
     "id": "39",
@@ -441,7 +479,8 @@
     "salt": 2,
     "kcal": 218,
     "desc": "Nothing says happiness like a slice of Louts cheesecake.",
-    "lra": "no"
+    "lra": "no",
+    "type": "desserts"
   },
   {
     "id": "40",
@@ -455,7 +494,8 @@
     "salt": 3,
     "kcal": 326,
     "desc": "You can't buy happiness, but you can buy blueberry cheesecake.",
-    "lra": "no"
+    "lra": "no",
+    "type": "desserts"
   },
   {
     "id": "41",
@@ -469,7 +509,8 @@
     "salt": 2,
     "kcal": 218,
     "desc": "Donuts are proof that good things come in small packages.",
-    "lra": "no"
+    "lra": "no",
+    "type": "desserts"
   },
   {
     "id": "42",
@@ -480,7 +521,8 @@
     "sizeM": "62",
     "sizeL": "75",
     "desc": "Espresso coffee with hot milk mixed with lots of creamy foam.",
-    "lra": "no"
+    "lra": "no",
+    "type": "beverageml"
   },
   {
     "id": "43",
@@ -491,7 +533,8 @@
     "sizeS": "30",
     "sizeD": "40",
     "desc": "A balanced blend of the finest coffee beans produces a cup with a rich flavor.",
-    "lra": "no"
+    "lra": "no",
+    "type": "beveragesd"
   },
   {
     "id": "44",
@@ -502,7 +545,8 @@
     "sizeM": "75",
     "sizeL": "85",
     "desc": "Strong espresso with creamy caramel and layer of soft whipped cream.",
-    "lra": "no"
+    "lra": "no",
+    "type": "beverageml"
   },
   {
     "id": "45",
@@ -513,7 +557,8 @@
     "sizeM": "60",
     "sizeL": "70",
     "desc": "A rich chocolate milk drink with delicious caramel to create the blend you love.",
-    "lra": "no"
+    "lra": "no",
+    "type": "beverageml"
   },
   {
     "id": "46",
@@ -524,7 +569,8 @@
     "sizeM": "75",
     "sizeL": "85",
     "desc": "A mixture of fresh milk with the finest rich chocolate.",
-    "lra": "no"
+    "lra": "no",
+    "type": "beverageml"
   },
   {
     "id": "47",
@@ -534,6 +580,7 @@
     "category": "CAN",
     "weight": "1/4 KG",
     "desc": "Rich coffee blend and delicious creamer in your favorite hazelnut flavor.",
-    "lra": "no"
+    "lra": "no",
+    "type": "can"
   }
 ]

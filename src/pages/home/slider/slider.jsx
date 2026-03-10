@@ -12,7 +12,7 @@ const Slider = () => {
     const fetchSliderData = async () => {
       try {
         const response = await fetch(
-          "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/homeSliderData.json",
+          "https://raw.githubusercontent.com/Ahmedadelkhalil/ALFAYOMI-COFFEE/refs/heads/master/src/assets/data/homeSliderData.json",
         );
         const data = await response.json();
         setSlidersData(data);

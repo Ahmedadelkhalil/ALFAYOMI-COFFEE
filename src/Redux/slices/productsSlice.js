@@ -4,7 +4,7 @@ export const fetchProducts = createAsyncThunk(
   "products/fetchProducts",
   async () => {
     const response = await fetch(
-      "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/productsData.json",
+      "https://raw.githubusercontent.com/Ahmedadelkhalil/ALFAYOMI-COFFEE/refs/heads/master/src/assets/data/productsData.json",
       {
         method: "GET",
       },

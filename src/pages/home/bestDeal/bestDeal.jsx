@@ -12,7 +12,7 @@ const BestDeal = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/categoryData.json",
+          "https://raw.githubusercontent.com/Ahmedadelkhalil/ALFAYOMI-COFFEE/refs/heads/master/src/assets/data/categoryData.json",
         );
         const data = await response.json();
         setCategoryData(data);

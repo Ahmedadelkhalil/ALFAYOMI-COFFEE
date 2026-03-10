@@ -10,7 +10,7 @@ const SpecialOfferCard = () => {
     const fetchMonthSpecialData = async () => {
       try {
         const response = await fetch(
-          "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/ourEvents.json",
+          "https://raw.githubusercontent.com/Ahmedadelkhalil/ALFAYOMI-COFFEE/refs/heads/master/src/assets/data/ourEvents.json",
         );
         const data = await response.json();
         setMonthSpecialData(data);

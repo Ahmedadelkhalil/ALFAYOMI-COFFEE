@@ -40,7 +40,7 @@ const ProductDetails = () => {
     if (location.state) {
       setTopHalfProInfo(Object.values(location.state.from)[0]);
       setSelectedSize("tomn");
-      setSelectedRoast("light");
+      setSelectedRoast(topHalfProInfo?.lra === "yes" ? "light" : "medium");
     } else {
       let regex = /:.*/gi;
       const proDetailsNameExtraction = location.pathname
@@ -53,7 +53,7 @@ const ProductDetails = () => {
       setSelectedSize("tomn");
       setSelectedRoast("light");
     }
-  }, [state, location, productsData]);
+  }, [state, location, productsData, topHalfProInfo?.lra]);
 
   // ALERT
   const [alertMsg, setAlertMsg] = useState("");
@@ -71,7 +71,9 @@ const ProductDetails = () => {
     kilo: "1 KG",
   };
   const [selectedSize, setSelectedSize] = useState("tomn");
-  const [selectedRoast, setSelectedRoast] = useState("light");
+  const [selectedRoast, setSelectedRoast] = useState(
+    topHalfProInfo?.lra === "yes" ? "light" : "medium",
+  );
 
   const handleSizeChange = (e) => {
     setSelectedSize(e.target.value);
@@ -175,17 +177,19 @@ const ProductDetails = () => {
                 <div className="productDetails_ingredient_sec d-flex align-items-center">
                   <div className="radio-group d-flex">
                     <span>Roast : </span>
-                    <div className="mx-1 ">
-                      <input
-                        type="radio"
-                        id="light"
-                        name="roast"
-                        value="light"
-                        checked={selectedRoast === "light"}
-                        onChange={handleRoastChange}
-                      />
-                      <label htmlFor="light">Light</label>
-                    </div>
+                    {topHalfProInfo?.lra === "yes" ? (
+                      <div className="mx-1 ">
+                        <input
+                          type="radio"
+                          id="light"
+                          name="roast"
+                          value="light"
+                          checked={selectedRoast === "light"}
+                          onChange={handleRoastChange}
+                        />
+                        <label htmlFor="light">Light</label>
+                      </div>
+                    ) : null}
 
                     <div className="mx-1">
                       <input
@@ -328,7 +332,7 @@ const ProductDetails = () => {
                       rob3: product.rob3,
                       nos: product.nos,
                       kilo: product.kilo,
-                      lightroastavailable: product.lightroastavailable,
+                      lra: product.lra,
                     };
                     return (
                       <SwiperSlide key={product.id}>
