@@ -22,7 +22,7 @@
     "rob3": 210,
     "nos": 420,
     "kilo": 840,
-    "lightRoast": true,
+    "lightRoast": "yes",
     "desc": "A blend of robusta and arabica beans rich in caffeine for those who work in the morning."
   },
   {
@@ -35,7 +35,7 @@
     "rob3": 240,
     "nos": 480,
     "kilo": 960,
-    "lightRoast": true,
+    "lightRoast": "yes",
     "desc": "A balanced blend of the finest coffee beans gives a cup with a rich flavor."
   },
   {
@@ -48,7 +48,7 @@
     "rob3": 170,
     "nos": 340,
     "kilo": 680,
-    "lightRoast": true,
+    "lightRoast": "yes",
     "desc": "A blend of robusta and arabica beans rich in caffeine for those who work in the morning."
   },
   {
@@ -61,7 +61,7 @@
     "rob3": 200,
     "nos": 400,
     "kilo": 800,
-    "lightRoast": true,
+    "lightRoast": "yes",
     "desc": "A balanced blend of the finest coffee beans gives a cup with a rich flavor."
   },
   {
@@ -74,7 +74,7 @@
     "rob3": 300,
     "nos": 600,
     "kilo": 1200,
-    "lightRoast": false,
+    "lightRoast": "no",
     "desc": "will be edit & change soon"
   },
   {
@@ -87,7 +87,7 @@
     "rob3": 340,
     "nos": 680,
     "kilo": 1360,
-    "lightRoast": false,
+    "lightRoast": "no",
     "desc": "will be edit & change soon"
   },
   {
@@ -100,7 +100,7 @@
     "rob3": 224,
     "nos": 448,
     "kilo": 896,
-    "lightRoast": true,
+    "lightRoast": "yes",
     "desc": "A blend of the finest coffee beans gives a cup with a heavy, smooth texture."
   },
   {
@@ -113,7 +113,7 @@
     "rob3": 220,
     "nos": 440,
     "kilo": 880,
-    "lightRoast": false,
+    "lightRoast": "no",
     "desc": "Arabica coffee beans are characterized by a strong aroma and acidic flavor."
   },
   {
@@ -126,7 +126,7 @@
     "rob3": 260,
     "nos": 520,
     "kilo": 1040,
-    "lightRoast": false,
+    "lightRoast": "no",
     "desc": "Arabica coffee beans are characterized by a strong aroma and acidic flavor."
   },
   {
@@ -139,7 +139,7 @@
     "rob3": 220,
     "nos": 440,
     "kilo": 880,
-    "lightRoast": false,
+    "lightRoast": "no",
     "desc": "Arabica coffee beans with a light, balanced flavor."
   },
   {
@@ -152,7 +152,7 @@
     "rob3": 260,
     "nos": 520,
     "kilo": 1040,
-    "lightRoast": false,
+    "lightRoast": "no",
     "desc": "Arabica coffee beans with a light, balanced flavor."
   },
   {
