@@ -87,7 +87,7 @@ const Cart = () => {
                           <NavLink
                             to={`/productDetails/:${pro.name?.replaceAll(
                               " ",
-                              "-"
+                              "-",
                             )}`}
                             state={{ from: { productInfo } }}
                           >
@@ -96,15 +96,17 @@ const Cart = () => {
                           <NavLink
                             to={`/productDetails/:${pro.name?.replaceAll(
                               " ",
-                              "-"
+                              "-",
                             )}`}
                             state={{ from: { productInfo } }}
                           >
-                            <h4 className="text-uppercase">{pro.name}</h4>
+                            <h4 className="text-uppercase">
+                              {`${pro.name} [ ${pro?.size} | ${pro?.roast} ]`}
+                            </h4>
                           </NavLink>
                         </td>
                         <td className="cartTable-price-sec">{`$${pro.price.toFixed(
-                          2
+                          2,
                         )}`}</td>
                         <td className="cartTable-qnt-sec">
                           <button
@@ -164,7 +166,7 @@ const Cart = () => {
             </div>
             <div className="subtotalSection d-flex justify-content-end main-color-green mt-3">
               <span>{`Gross Total : $${Number(Number(totalCost) + 10).toFixed(
-                2
+                2,
               )}`}</span>
             </div>
             <div className="rmFun_checkPage_sec d-flex justify-content-end">

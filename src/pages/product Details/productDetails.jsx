@@ -39,6 +39,8 @@ const ProductDetails = () => {
   useEffect(() => {
     if (location.state) {
       setTopHalfProInfo(Object.values(location.state.from)[0]);
+      setSelectedSize("tomn");
+      setSelectedRoast("light");
     } else {
       let regex = /:.*/gi;
       const proDetailsNameExtraction = location.pathname
@@ -48,6 +50,8 @@ const ProductDetails = () => {
       setTopHalfProInfo(
         productsData.find((pro) => pro.title === proDetailsNameExtraction),
       );
+      setSelectedSize("tomn");
+      setSelectedRoast("light");
     }
   }, [state, location, productsData]);
 
@@ -58,6 +62,22 @@ const ProductDetails = () => {
     const alertHolder = alertParent.current;
     const toast = new Toast(alertHolder);
     toast.show();
+  };
+
+  const sizeLabels = {
+    tomn: "1/8 KG",
+    rob3: "1/4 KG",
+    nos: "1/2 KG",
+    kilo: "1 KG",
+  };
+  const [selectedSize, setSelectedSize] = useState("tomn");
+  const [selectedRoast, setSelectedRoast] = useState("light");
+
+  const handleSizeChange = (e) => {
+    setSelectedSize(e.target.value);
+  };
+  const handleRoastChange = (e) => {
+    setSelectedRoast(e.target.value);
   };
 
   return (
@@ -102,24 +122,99 @@ const ProductDetails = () => {
                 <h3 style={{ textTransform: "uppercase" }}>
                   {topHalfProInfo?.name}
                 </h3>
+                {/* ============================COFFEE SIZE======================== */}
                 <div className="productDetails_ingredient_sec d-flex align-items-center">
-                  <p className="d-flex align-items-center">
-                    {`kcal:`} <span>{`${topHalfProInfo?.kcal}`}</span>
-                  </p>
-                  <p className="d-flex align-items-center">
-                    {`fat:`} <span>{`${topHalfProInfo?.fat}g`}</span>
-                  </p>
-                  <p className="d-flex align-items-center">
-                    {`saturates:`}{" "}
-                    <span>{`${topHalfProInfo?.saturates}g`}</span>
-                  </p>
-                  <p className="d-flex align-items-center">
-                    {`sugars:`} <span>{`${topHalfProInfo?.sugars}g`}</span>
-                  </p>
-                  <p className="d-flex align-items-center">
-                    {`salt:`} <span>{`${topHalfProInfo?.salt}g`}</span>
-                  </p>
+                  <div className="radio-group d-flex">
+                    <span>Size : </span>
+                    <div className="mx-1">
+                      <input
+                        type="radio"
+                        id="tomn"
+                        name="size"
+                        value="tomn"
+                        checked={selectedSize === "tomn"}
+                        onChange={handleSizeChange}
+                      />
+                      <label htmlFor="tomn">1/8 KG</label>
+                    </div>
+                    <div className="mx-1">
+                      <input
+                        type="radio"
+                        id="rob3"
+                        name="size"
+                        value="rob3"
+                        checked={selectedSize === "rob3"}
+                        onChange={handleSizeChange}
+                      />
+                      <label htmlFor="rob3">1/4 KG</label>
+                    </div>
+                    <div className="mx-1">
+                      <input
+                        type="radio"
+                        id="nos"
+                        name="size"
+                        value="nos"
+                        checked={selectedSize === "nos"}
+                        onChange={handleSizeChange}
+                      />
+                      <label htmlFor="nos">1/2 KG</label>
+                    </div>
+                    <div className="mx-1">
+                      <input
+                        type="radio"
+                        id="kilo"
+                        name="size"
+                        value="kilo"
+                        checked={selectedSize === "kilo"}
+                        onChange={handleSizeChange}
+                      />
+                      <label htmlFor="kilo">1 KG</label>
+                    </div>
+                  </div>
                 </div>
+                {/* ============================================================= */}
+                {/* =========================COFFEE ROAST============================ */}
+                <div className="productDetails_ingredient_sec d-flex align-items-center">
+                  <div className="radio-group d-flex">
+                    <span>Roast : </span>
+
+                    <div className="mx-1 ">
+                      <input
+                        type="radio"
+                        id="light"
+                        name="roast"
+                        value="light"
+                        checked={selectedRoast === "light"}
+                        onChange={handleRoastChange}
+                      />
+                      <label htmlFor="light">Light</label>
+                    </div>
+                    {console.log(topHalfProInfo?.lightRoast)}
+                    <div className="mx-1">
+                      <input
+                        type="radio"
+                        id="medium"
+                        name="roast"
+                        value="medium"
+                        checked={selectedRoast === "medium"}
+                        onChange={handleRoastChange}
+                      />
+                      <label htmlFor="medium">Medium</label>
+                    </div>
+                    <div className="mx-1">
+                      <input
+                        type="radio"
+                        id="dark"
+                        name="roast"
+                        value="dark"
+                        checked={selectedRoast === "dark"}
+                        onChange={handleRoastChange}
+                      />
+                      <label htmlFor="dark">Dark</label>
+                    </div>
+                  </div>
+                </div>
+                {/* ==================================================================== */}
                 <div className="productDetails_description_sec">
                   <p className="main-labels-color">
                     {topHalfProInfo?.description}
@@ -148,7 +243,7 @@ const ProductDetails = () => {
                   </div>
                 </div>
                 <div className="productDetails_price_addCart_sec">
-                  <span>{`$${topHalfProInfo?.price}`}</span>
+                  <span>{`${topHalfProInfo?.[selectedSize]} L.E`}</span>
                   <button
                     onClick={() => {
                       dispatch(
@@ -156,7 +251,7 @@ const ProductDetails = () => {
                           id: topHalfProInfo?.id,
                           name: topHalfProInfo?.name,
                           quantity: quantity,
-                          price: topHalfProInfo?.price,
+                          price: topHalfProInfo?.[selectedSize],
                           img: topHalfProInfo?.img,
                           productTotalCost: topHalfProInfo?.price * quantity,
                           kcal: topHalfProInfo?.kcal,
@@ -166,6 +261,8 @@ const ProductDetails = () => {
                           salt: topHalfProInfo?.salt,
                           description: topHalfProInfo?.desc,
                           category: topHalfProInfo?.category,
+                          size: sizeLabels?.[selectedSize],
+                          roast: selectedRoast,
                         }),
                       );
                       setQuantity(0);
@@ -230,6 +327,11 @@ const ProductDetails = () => {
                       description: product.desc,
                       price: product.price,
                       category: product.category,
+                      tomn: product.tomn,
+                      rob3: product.rob3,
+                      nos: product.nos,
+                      kilo: product.kilo,
+                      lightRoast: product.lightRoast,
                     };
                     return (
                       <SwiperSlide key={product.id}>

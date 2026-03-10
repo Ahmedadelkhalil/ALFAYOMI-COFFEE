@@ -72,7 +72,7 @@ const SpecialOfferCard = () => {
                   <div className="specialOffer_card_title">
                     {monthSpecial.title}
                   </div>
-                  <div className="specialOffer_card_paragraphs">
+                  <div className="specialOffer_card_paragraphs px-2">
                     <p>{monthSpecial.p_01}</p>
                     <p>{monthSpecial.p_02}</p>
                   </div>
@@ -87,7 +87,7 @@ const SpecialOfferCard = () => {
                   <div className="specialOffer_card_title">
                     {monthSpecial.title}
                   </div>
-                  <div className="specialOffer_card_paragraphs">
+                  <div className="specialOffer_card_paragraphs px-2">
                     <p>{monthSpecial.p_01}</p>
                     <p>{monthSpecial.p_02}</p>
                   </div>

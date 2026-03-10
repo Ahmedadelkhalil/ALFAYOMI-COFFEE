@@ -5,7 +5,7 @@ import SmallCard from "./smallCard";
 // Large Card Component
 import LargeCard from "./largeCard";
 
-const ProductCategory = ({ cat }) => {
+const ProductCategory = ({ cat, bannerLabel }) => {
   let productOfSameCategory = [];
   // REDUX
   const productsStatus = useSelector((state) => state.products.status);
@@ -52,7 +52,7 @@ const ProductCategory = ({ cat }) => {
     objectsName[i].category = productOfSameCategory[i]?.category;
   }
 
-  const categoryTitle = `${cat}`;
+  const categoryTitle = `${bannerLabel}`;
 
   return (
     <>

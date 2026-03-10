@@ -118,7 +118,7 @@ const LargeCard = ({ largeProductCardInfo }) => {
             </button>
           </div>
           <div className="d-flex align-items-center">
-            <span className="main-pic-price">{`$${largeProductCardInfo.price}`}</span>
+            <span className="main-pic-price">{`${largeProductCardInfo.price} L.E`}</span>
             <button
               className="main-pro-addToCart-btn"
               onClick={() => {

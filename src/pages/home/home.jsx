@@ -24,10 +24,10 @@ const Home = () => {
           <BestDeal />
         </div>
         <div className="py-2 px-4">
-          <ProductCategory cat="TURKISH COFFEE" />
-          <ProductCategory cat="DRINKS" />
-          <ProductCategory cat="CAN" />
-          <ProductCategory cat="DESSERTS" />
+          <ProductCategory cat="TURKISH COFFEE" bannerLabel="TURKISH COFFEE" />
+          <ProductCategory cat="DRINKS" bannerLabel="HOT & ICE DRINKS" />
+          <ProductCategory cat="CAN" bannerLabel="COFFEE CAN 250g" />
+          <ProductCategory cat="DESSERTS" bannerLabel="DESSERTS" />
           <MonthSpecials />
         </div>
         <Vouchers />

@@ -199,3 +199,30 @@
     height: 220px !important;
   }
 }
+
+.radio-group input[type="radio"] {
+  /* Hide the default radio circle */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Keep it focusable but visually hidden or off-screen */
+  opacity: 0;
+  width: 0;
+  position: fixed !important;
+}
+
+.radio-group label {
+  /* Style the label to look like a button or custom control */
+  padding: 0px 13px !important;
+  border: 2px solid #fff;
+  border-radius: 4px; /* Optional: for a square look */
+  cursor: pointer;
+  background-color: transparent !important;
+}
+
+.radio-group input[type="radio"]:checked + label {
+  /* Style the label when the radio is checked */
+  background-color: #321e17 !important;
+  color: #fff !important;
+  border: 2px solid #321e17 !important;
+}

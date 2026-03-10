@@ -28,10 +28,6 @@ const SmallCard = ({ smallProductCardInfo }) => {
   return (
     <>
       <div className="sm-box-logo-label d-flex justify-content-end">
-        {/* <small className="kcal-small d-flex flex-column justify-content-center align-items-center">
-          <span>{smallProductCardInfo.kcal}</span>
-          <span>kcal</span>
-        </small> */}
         <img
           src="https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/alFayomi-Header-Logo.png"
           alt="ALFAYOMI LOGO"
@@ -93,7 +89,7 @@ const SmallCard = ({ smallProductCardInfo }) => {
             </button>
           </div>
           <div className="d-flex justify-content-center align-items-center">
-            <span className="sub-pic-price">{`$${smallProductCardInfo.price}`}</span>
+            <span className="sub-pic-price">{`${smallProductCardInfo.price} L.E`}</span>
             <button
               className="sub-pro-addToCart-btn"
               onClick={() => {
