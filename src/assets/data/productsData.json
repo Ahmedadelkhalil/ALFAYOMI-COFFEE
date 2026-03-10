@@ -9,8 +9,8 @@
     "rob3": 264,
     "nos": 528,
     "kilo": 1056,
-    "lightRoast": "yes",
-    "desc": "A blend of the finest coffee beans gives a cup with a heavy, smooth texture."
+    "desc": "A blend of the finest coffee beans gives a cup with a heavy, smooth texture.",
+    "lightroastavailable": "yes"
   },
   {
     "id": "2",
@@ -22,8 +22,8 @@
     "rob3": 210,
     "nos": 420,
     "kilo": 840,
-    "lightRoast": "yes",
-    "desc": "A blend of robusta and arabica beans rich in caffeine for those who work in the morning."
+    "desc": "A blend of robusta and arabica beans rich in caffeine for those who work in the morning.",
+    "lightroastavailable": "yes"
   },
   {
     "id": "3",
@@ -35,8 +35,8 @@
     "rob3": 240,
     "nos": 480,
     "kilo": 960,
-    "lightRoast": "yes",
-    "desc": "A balanced blend of the finest coffee beans gives a cup with a rich flavor."
+    "desc": "A balanced blend of the finest coffee beans gives a cup with a rich flavor.",
+    "lightroastavailable": "yes"
   },
   {
     "id": "4",
@@ -48,8 +48,8 @@
     "rob3": 170,
     "nos": 340,
     "kilo": 680,
-    "lightRoast": "yes",
-    "desc": "A blend of robusta and arabica beans rich in caffeine for those who work in the morning."
+    "desc": "A blend of robusta and arabica beans rich in caffeine for those who work in the morning.",
+    "lightroastavailable": "yes"
   },
   {
     "id": "5",
@@ -61,8 +61,8 @@
     "rob3": 200,
     "nos": 400,
     "kilo": 800,
-    "lightRoast": "yes",
-    "desc": "A balanced blend of the finest coffee beans gives a cup with a rich flavor."
+    "desc": "A balanced blend of the finest coffee beans gives a cup with a rich flavor.",
+    "lightroastavailable": "yes"
   },
   {
     "id": "6",
@@ -74,8 +74,8 @@
     "rob3": 300,
     "nos": 600,
     "kilo": 1200,
-    "lightRoast": "no",
-    "desc": "will be edit & change soon"
+    "desc": "will be edit & change soon",
+    "lightroastavailable": "no"
   },
   {
     "id": "7",
@@ -87,8 +87,8 @@
     "rob3": 340,
     "nos": 680,
     "kilo": 1360,
-    "lightRoast": "no",
-    "desc": "will be edit & change soon"
+    "desc": "will be edit & change soon",
+    "lightroastavailable": "no"
   },
   {
     "id": "8",
@@ -100,8 +100,8 @@
     "rob3": 224,
     "nos": 448,
     "kilo": 896,
-    "lightRoast": "yes",
-    "desc": "A blend of the finest coffee beans gives a cup with a heavy, smooth texture."
+    "desc": "A blend of the finest coffee beans gives a cup with a heavy, smooth texture.",
+    "lightroastavailable": "yes"
   },
   {
     "id": "9",
@@ -113,8 +113,8 @@
     "rob3": 220,
     "nos": 440,
     "kilo": 880,
-    "lightRoast": "no",
-    "desc": "Arabica coffee beans are characterized by a strong aroma and acidic flavor."
+    "desc": "Arabica coffee beans are characterized by a strong aroma and acidic flavor.",
+    "lightroastavailable": "no"
   },
   {
     "id": "10",
@@ -126,8 +126,8 @@
     "rob3": 260,
     "nos": 520,
     "kilo": 1040,
-    "lightRoast": "no",
-    "desc": "Arabica coffee beans are characterized by a strong aroma and acidic flavor."
+    "desc": "Arabica coffee beans are characterized by a strong aroma and acidic flavor.",
+    "lightroastavailable": "no"
   },
   {
     "id": "11",
@@ -139,8 +139,8 @@
     "rob3": 220,
     "nos": 440,
     "kilo": 880,
-    "lightRoast": "no",
-    "desc": "Arabica coffee beans with a light, balanced flavor."
+    "desc": "Arabica coffee beans with a light, balanced flavor.",
+    "lightroastavailable": "no"
   },
   {
     "id": "12",
@@ -152,8 +152,8 @@
     "rob3": 260,
     "nos": 520,
     "kilo": 1040,
-    "lightRoast": "no",
-    "desc": "Arabica coffee beans with a light, balanced flavor."
+    "desc": "Arabica coffee beans with a light, balanced flavor.",
+    "lightroastavailable": "no"
   },
   {
     "id": "13",

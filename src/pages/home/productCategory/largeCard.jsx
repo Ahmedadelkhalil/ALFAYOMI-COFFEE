@@ -63,7 +63,8 @@ const LargeCard = ({ largeProductCardInfo }) => {
             state={{ from: { largeProductCardInfo } }}
             className="main-color-green text-uppercase"
           >
-            {largeProductCardInfo.name} {`${largeProductCardInfo.lightRoast}`}
+            {largeProductCardInfo.name}{" "}
+            {`${largeProductCardInfo.lightroastavailable}`}
           </NavLink>
         </h4>
         {largeProductCardInfo.category === "DESSERTS" ? (

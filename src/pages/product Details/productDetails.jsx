@@ -119,7 +119,7 @@ const ProductDetails = () => {
             <div className="productDetails_rightSide mt-4 mt-md-0 col-md-6 d-flex justify-content-center justify-content-md-start align-items-center">
               <div>
                 <h3 style={{ textTransform: "uppercase" }}>
-                  {topHalfProInfo?.name} {topHalfProInfo?.lightRoast}
+                  {topHalfProInfo?.name}
                 </h3>
                 {/* ============================COFFEE SIZE======================== */}
                 <div className="productDetails_ingredient_sec d-flex align-items-center">
