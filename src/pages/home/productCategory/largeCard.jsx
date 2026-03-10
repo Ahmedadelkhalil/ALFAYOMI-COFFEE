@@ -64,9 +64,9 @@ const LargeCard = ({ largeProductCardInfo }) => {
             className="main-color-green text-uppercase"
           >
             {largeProductCardInfo.name}
-            {largeProductCardInfo.lightroastavailable === "yes"
+            {largeProductCardInfo?.lra === !undefined
               ? " (Light Roast Available)"
-              : ""}
+              : " undefineeeeed"}
           </NavLink>
         </h4>
         {largeProductCardInfo.category === "DESSERTS" ? (

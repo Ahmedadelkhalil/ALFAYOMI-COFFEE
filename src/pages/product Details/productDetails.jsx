@@ -175,21 +175,17 @@ const ProductDetails = () => {
                 <div className="productDetails_ingredient_sec d-flex align-items-center">
                   <div className="radio-group d-flex">
                     <span>Roast : </span>
-                    {topHalfProInfo?.lightroastavailable === "yes" ? (
-                      <div className="mx-1 ">
-                        <input
-                          type="radio"
-                          id="light"
-                          name="roast"
-                          value="light"
-                          checked={selectedRoast === "light"}
-                          onChange={handleRoastChange}
-                        />
-                        <label htmlFor="light">Light</label>
-                      </div>
-                    ) : (
-                      ""
-                    )}
+                    <div className="mx-1 ">
+                      <input
+                        type="radio"
+                        id="light"
+                        name="roast"
+                        value="light"
+                        checked={selectedRoast === "light"}
+                        onChange={handleRoastChange}
+                      />
+                      <label htmlFor="light">Light</label>
+                    </div>
 
                     <div className="mx-1">
                       <input
