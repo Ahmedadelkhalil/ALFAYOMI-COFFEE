@@ -91,6 +91,11 @@ const ProductDetails = () => {
     rob3: "1/4 KG",
     nos: "1/2 KG",
     kilo: "1 KG",
+    sizeM: "Medium",
+    sizeL: "Large",
+    sizeS: "Single",
+    sizeD: "Double",
+    "can 1/4 KG": "1/4 KG",
   };
   const [selectedSize, setSelectedSize] = useState(
     topHalfProInfo?.type === "beverageml"

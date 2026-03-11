@@ -106,7 +106,13 @@ const Cart = () => {
                             state={{ from: { productInfo } }}
                           >
                             <h4 className="text-uppercase">
-                              {`${pro.name} [ ${pro?.size} | ${pro?.roast} ]`}
+                              {pro.type === "coffee"
+                                ? `${pro.name} [ ${pro?.size} | ${pro?.roast} ]`
+                                : pro.type === "beverageml" ||
+                                    pro.type === "beveragesd" ||
+                                    pro.type === "can"
+                                  ? `${pro.name} [ ${pro?.size} ]`
+                                  : `${pro.name}`}
                             </h4>
                           </NavLink>
                         </td>
