@@ -20,10 +20,12 @@ const Cart = () => {
   const dispatch = useDispatch();
   const cartProducts = useSelector((state) => state.cart.cartItems);
   const totalCost = useSelector((state) => state.cart.totalCost);
+
+  console.log(totalCost);
   return (
     <>
       <Helmet>
-        <title>PRIMECUT | CART</title>
+        <title>ALFAYOMI | CART</title>
       </Helmet>
       <div className="cartPage_container px-4">
         <div className="cart_title pt-5">
@@ -73,6 +75,9 @@ const Cart = () => {
                       id: pro.id,
                       img: pro.img,
                       price: pro.price,
+                      oneprice: pro.oneprice,
+                      productTotalCost: pro.productTotalCost,
+                      onePriceProductTotalCost: pro.onePriceProductTotalCost,
                       kcal: pro.kcal,
                       fat: pro.fat,
                       saturates: pro.saturates,
@@ -105,9 +110,11 @@ const Cart = () => {
                             </h4>
                           </NavLink>
                         </td>
-                        <td className="cartTable-price-sec">{`$${pro.price.toFixed(
-                          2,
-                        )}`}</td>
+                        <td className="cartTable-price-sec">
+                          {pro.price === undefined
+                            ? `$${pro?.oneprice}`
+                            : `$${pro?.price}`}
+                        </td>
                         <td className="cartTable-qnt-sec">
                           <button
                             onClick={() =>
@@ -137,7 +144,9 @@ const Cart = () => {
                           </button>
                         </td>
                         <td className="cartTable-tQnt-sec">
-                          {`$${pro.productTotalCost.toFixed(2)}`}
+                          {pro.price === undefined
+                            ? `${Number(pro.oneprice * pro.quantity)} L.E`
+                            : `${Number(pro.price * pro.quantity)} L.E`}
                         </td>
                       </tr>
                     );
@@ -165,9 +174,7 @@ const Cart = () => {
               </table>
             </div>
             <div className="subtotalSection d-flex justify-content-end main-color-green mt-3">
-              <span>{`Gross Total : $${Number(Number(totalCost) + 10).toFixed(
-                2,
-              )}`}</span>
+              <span>{`Gross Total : ${totalCost} L.E`}</span>
             </div>
             <div className="rmFun_checkPage_sec d-flex justify-content-end">
               <button

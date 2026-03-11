@@ -28,45 +28,77 @@ export const cartSlice = createSlice({
     // Add Products To Cart
     addProductToCart: (state, action) => {
       const productInCart = state.cartItems.find(
-        (pro) => pro.id === action.payload.id
+        (pro) => pro.id === action.payload.id,
       );
       if (action.payload.quantity > 0) {
         if (productInCart) {
           productInCart.quantity =
             productInCart.quantity + action.payload.quantity;
           const currAmount = productInCart.quantity;
-          productInCart.productTotalCost = currAmount * productInCart.price;
+          if (productInCart.price === undefined) {
+            productInCart.onePriceProductTotalCost =
+              currAmount * productInCart.oneprice;
+          } else {
+            productInCart.productTotalCost = currAmount * productInCart.price;
+          }
+          // ================================================================================
+          state.totalCost = state.cartItems.reduce((acc, curr) => {
+            if (curr.price === undefined) {
+              return Number(acc + curr.quantity * curr.oneprice);
+            } else {
+              return Number(acc + curr.quantity * curr.price);
+            }
+          }, 0);
+          // ================================================================================
         } else {
           state.cartItems.push({ ...action.payload });
+          state.totalCost = state.cartItems.reduce((acc, curr) => {
+            if (curr.price === undefined) {
+              return Number(acc + curr.quantity * curr.oneprice);
+            } else {
+              return Number(acc + curr.quantity * curr.price);
+            }
+          }, 0);
         }
       }
-      state.totalCost = state.cartItems.reduce((acc, curr) => {
-        return Number(acc + curr.quantity * curr.price);
-      }, 0);
+
       handleLocalStorageAfterOp(state.cartItems, state.totalCost);
     },
     // Delete Products From Cart
     delProductFromCart: (state, action) => {
       const deletingPro = state.cartItems.filter(
-        (pro) => pro.id !== action.payload.id
+        (pro) => pro.id !== action.payload.id,
       );
       state.cartItems = deletingPro;
       state.totalCost = state.cartItems.reduce((acc, curr) => {
-        return Number(acc + curr.quantity * curr.price);
+        if (curr.price === undefined) {
+          return Number(acc + curr.quantity * curr.oneprice);
+        } else {
+          return Number(acc + curr.quantity * curr.price);
+        }
       }, 0);
       handleLocalStorageAfterOp(deletingPro, state.totalCost);
     },
     // Increment Product Quantity
     incrementQuantity: (state, action) => {
       const targetingProduct = state.cartItems.find(
-        (pro) => pro.id === action.payload.id
+        (pro) => pro.id === action.payload.id,
       );
       if (targetingProduct) {
         targetingProduct.quantity++;
         const currQNT = targetingProduct.quantity;
-        targetingProduct.productTotalCost = targetingProduct.price * currQNT;
+        if (targetingProduct.price === undefined) {
+          targetingProduct.onePriceProductTotalCost =
+            targetingProduct.oneprice * currQNT;
+        } else {
+          targetingProduct.productTotalCost = targetingProduct.price * currQNT;
+        }
         state.totalCost = state.cartItems.reduce((acc, curr) => {
-          return Number(acc + curr.quantity * curr.price);
+          if (curr.price === undefined) {
+            return Number(acc + curr.quantity * curr.oneprice);
+          } else {
+            return Number(acc + curr.quantity * curr.price);
+          }
         }, 0);
         handleLocalStorageAfterOp(state.cartItems, state.totalCost);
       }
@@ -74,24 +106,39 @@ export const cartSlice = createSlice({
     // Decrement Product Quantity
     decrementQuantity: (state, action) => {
       const targetingProduct = state.cartItems.find(
-        (pro) => pro.id === action.payload.id
+        (pro) => pro.id === action.payload.id,
       );
       if (targetingProduct) {
         if (targetingProduct.quantity === 1) {
           const itemsToStay = state.cartItems.filter(
-            (pro) => pro.id !== targetingProduct.id
+            (pro) => pro.id !== targetingProduct.id,
           );
           state.cartItems = itemsToStay;
+
           state.totalCost = state.cartItems.reduce((acc, curr) => {
-            return Number(acc + curr.quantity * curr.price);
+            if (targetingProduct.price === undefined) {
+              return Number(acc + curr.quantity * curr.oneprice);
+            } else {
+              return Number(acc + curr.quantity * curr.price);
+            }
           }, 0);
           handleLocalStorageAfterOp(state.cartItems, state.totalCost);
         } else {
           targetingProduct.quantity--;
           const currQNT = targetingProduct.quantity;
-          targetingProduct.productTotalCost = targetingProduct.price * currQNT;
+          if (targetingProduct.price === undefined) {
+            targetingProduct.onePriceProductTotalCost =
+              targetingProduct.oneprice * currQNT;
+          } else {
+            targetingProduct.productTotalCost =
+              targetingProduct.price * currQNT;
+          }
           state.totalCost = state.cartItems.reduce((acc, curr) => {
-            return Number(acc + curr.quantity * curr.price);
+            if (curr.price === undefined) {
+              return Number(acc + curr.quantity * curr.oneprice);
+            } else {
+              return Number(acc + curr.quantity * curr.price);
+            }
           }, 0);
           handleLocalStorageAfterOp(state.cartItems, state.totalCost);
         }

@@ -359,8 +359,12 @@ const ProductDetails = () => {
                           name: topHalfProInfo?.name,
                           quantity: quantity,
                           price: topHalfProInfo?.[selectedSize],
+                          oneprice: topHalfProInfo?.price,
                           img: topHalfProInfo?.img,
-                          productTotalCost: topHalfProInfo?.price * quantity,
+                          productTotalCost:
+                            topHalfProInfo?.[selectedSize] * quantity,
+                          onePriceProductTotalCost:
+                            topHalfProInfo?.oneprice * quantity,
                           kcal: topHalfProInfo?.kcal,
                           fat: topHalfProInfo?.fat,
                           saturates: topHalfProInfo?.saturates,
@@ -370,6 +374,7 @@ const ProductDetails = () => {
                           category: topHalfProInfo?.category,
                           size: sizeLabels?.[selectedSize],
                           roast: selectedRoast,
+                          type: topHalfProInfo?.type,
                         }),
                       );
                       setQuantity(0);
