@@ -97,6 +97,17 @@ const BestDeal = () => {
               description: product.desc,
               price: product.price,
               category: product.category,
+              tomn: product.tomn,
+              rob3: product.rob3,
+              nos: product.nos,
+              kilo: product.kilo,
+              weight: product.weight,
+              sizeM: product.sizeM,
+              sizeL: product.sizeL,
+              sizeS: product.sizeS,
+              sizeD: product.sizeD,
+              lra: product.lra,
+              type: product.type,
             };
             return (
               <SwiperSlide key={product.id}>

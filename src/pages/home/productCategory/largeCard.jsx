@@ -1,30 +1,6 @@
-import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-// ICONS
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMinus } from "@fortawesome/free-solid-svg-icons";
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
-import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
-// REDUX
-import { useDispatch } from "react-redux";
-import { addProductToCart } from "../../../Redux/slices/cartSlice";
-// ALERT
-import Alert from "../../../global/alert/alert";
-import { Toast } from "bootstrap";
 
 const LargeCard = ({ largeProductCardInfo }) => {
-  const [amount, setAmount] = useState(0);
-  // REDUX
-  const dispatch = useDispatch();
-  // Handle Alert
-  const [alertMsg, setAlertMsg] = useState("");
-  const alertParent = React.createRef();
-  const handleAlert = () => {
-    const alertHolder = alertParent.current;
-    const toast = new Toast(alertHolder);
-    toast.show();
-  };
-
   return (
     <>
       <div className=" d-flex justify-content-end">
@@ -61,7 +37,7 @@ const LargeCard = ({ largeProductCardInfo }) => {
               "-",
             )}`}
             state={{ from: { largeProductCardInfo } }}
-            className="main-color-green text-uppercase"
+            className="main-labels-color text-uppercase"
           >
             {largeProductCardInfo.name}
           </NavLink>
@@ -101,65 +77,22 @@ const LargeCard = ({ largeProductCardInfo }) => {
         <p className="large-pro-des">{largeProductCardInfo.description}</p>
         <div className="price-purchase-sec d-flex justify-content-between align-items-center">
           <div className="main-pic-amount">
-            <button
-              onClick={() => {
-                if (amount === 0) {
-                  return false;
-                } else {
-                  setAmount(amount - 1);
-                }
-              }}
+            <NavLink
+              to={`/productDetails/:${largeProductCardInfo.name?.replaceAll(
+                " ",
+                "-",
+              )}`}
+              state={{ from: { largeProductCardInfo } }}
+              className="main-labels-color text-uppercase main-pic-ex-label"
             >
-              <FontAwesomeIcon icon={faMinus} />
-            </button>
-            <span>{amount}</span>
-            <button onClick={() => setAmount(amount + 1)}>
-              <FontAwesomeIcon icon={faPlus} />
-            </button>
+              CLICK TO Explore
+            </NavLink>
           </div>
           <div className="d-flex align-items-center">
-            <span className="main-pic-price">{`${largeProductCardInfo.price} L.E`}</span>
-            <button
-              className="main-pro-addToCart-btn"
-              onClick={() => {
-                dispatch(
-                  addProductToCart({
-                    id: largeProductCardInfo.id,
-                    name: largeProductCardInfo.name,
-                    quantity: amount,
-                    price: largeProductCardInfo.price,
-                    img: largeProductCardInfo.img,
-                    productTotalCost: largeProductCardInfo.price * amount,
-                    kcal: largeProductCardInfo.kcal,
-                    fat: largeProductCardInfo.fat,
-                    saturates: largeProductCardInfo.saturates,
-                    sugars: largeProductCardInfo.sugars,
-                    salt: largeProductCardInfo.salt,
-                    description: largeProductCardInfo.description,
-                    category: largeProductCardInfo.category,
-                  }),
-                );
-                setAmount(0);
-                if (amount === 0) {
-                  setAlertMsg(`Choose Amount Please !!`);
-                  handleAlert();
-                } else {
-                  setAlertMsg(
-                    `${largeProductCardInfo.name} Added Successfully To Cart:)`,
-                  );
-                  handleAlert();
-                }
-              }}
-            >
-              <span>
-                <FontAwesomeIcon icon={faShoppingCart} />
-              </span>
-              <span>add to cart</span>
-            </button>
+            <span className="main-pic-price">{`${largeProductCardInfo.type === "coffee" || largeProductCardInfo.type === "beverageml" || largeProductCardInfo.type === "beveragesd" ? `FROM ${largeProductCardInfo.price}` : largeProductCardInfo.price} L.E`}</span>
           </div>
         </div>
       </div>
-      <Alert ref={alertParent} msg={alertMsg} />
     </>
   );
 };
