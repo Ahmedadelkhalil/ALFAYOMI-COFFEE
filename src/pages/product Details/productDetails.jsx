@@ -161,7 +161,8 @@ const ProductDetails = () => {
                 {/* ============================COFFEE SIZE======================== */}
                 <div className="productDetails_ingredient_sec d-flex align-items-center">
                   <div className="radio-group d-flex mt-2">
-                    {topHalfProInfo?.type === "desserts" ? null : (
+                    {topHalfProInfo?.type === "desserts" ||
+                    topHalfProInfo?.type === "coffee tools" ? null : (
                       <span>Size : </span>
                     )}
                     {topHalfProInfo?.type === "coffee" ? (
@@ -284,7 +285,8 @@ const ProductDetails = () => {
                     {topHalfProInfo?.type === "beverageml" ||
                     topHalfProInfo?.type === "beveragesd" ||
                     topHalfProInfo?.type === "can" ||
-                    topHalfProInfo?.type === "desserts" ? null : (
+                    topHalfProInfo?.type === "desserts" ||
+                    topHalfProInfo?.type === "coffee tools" ? null : (
                       <>
                         <span>Roast : </span>
                         {topHalfProInfo?.lra === "yes" ? (
@@ -355,7 +357,7 @@ const ProductDetails = () => {
                   </div>
                 </div>
                 <div className="productDetails_price_addCart_sec">
-                  <span>{`${topHalfProInfo?.type === "can" || topHalfProInfo?.type === "desserts" ? topHalfProInfo?.price : topHalfProInfo?.[selectedSize]} L.E`}</span>
+                  <span>{`${topHalfProInfo?.type === "can" || topHalfProInfo?.type === "desserts" || topHalfProInfo?.type === "coffee tools" ? topHalfProInfo?.price : topHalfProInfo?.[selectedSize]} L.E`}</span>
                   <button
                     onClick={() => {
                       dispatch(
