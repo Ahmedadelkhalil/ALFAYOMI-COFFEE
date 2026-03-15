@@ -7,7 +7,9 @@
     "category": "DRINKS",
     "sizeM": "75",
     "sizeL": "85",
-    "desc": "Strong espresso with creamy caramel and layer of soft whipped cream."
+    "desc": "Strong espresso with creamy caramel and layer of soft whipped cream.",
+    "lra": "no",
+    "type": "beverageml"
   },
   {
     "id": "13",
@@ -16,7 +18,9 @@
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/ArabicCoffeeCan.jpg",
     "category": "CAN",
     "weight": "1/4 KG",
-    "desc": "Ground coffee with cardamom, cloves, ginger and cinnamon."
+    "desc": "Ground coffee with cardamom, cloves, ginger and cinnamon.",
+    "lra": "no",
+    "type": "can"
   },
   {
     "id": "27",
@@ -24,7 +28,9 @@
     "price": 220,
     "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/7cf7ec6495a22c166ac6b9ada4d4417ec01c43a0/Copper-Alfayomi-crown-Burner-size2.jpg",
     "category": "COFFEE TOOLS",
-    "desc": ""
+    "desc": "",
+    "lra": "no",
+    "type": "coffee tools"
   },
   {
     "id": "46",
@@ -34,7 +40,9 @@
     "category": "DRINKS",
     "sizeM": "75",
     "sizeL": "85",
-    "desc": "A mixture of fresh milk with the finest rich chocolate."
+    "desc": "A mixture of fresh milk with the finest rich chocolate.",
+    "lra": "no",
+    "type": "beverageml"
   },
   {
     "id": "33",
@@ -47,15 +55,19 @@
     "sugars": 64,
     "salt": 8,
     "kcal": 611,
-    "desc": "rich, creamy, and indulgent nature, emphasizing the blend of coffee, mascarpone, and cocoa that delivers a pick-me-up experience."
+    "desc": "rich, creamy, and indulgent nature, emphasizing the blend of coffee, mascarpone, and cocoa that delivers a pick-me-up experience.",
+    "lra": "no",
+    "type": "desserts"
   },
   {
-    "id": "47",
+    "id": "15",
     "title": "French Hazelnut",
     "price": 175,
-    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/f522adff6f1290e940dcc239179add67caba89a1/PacketFrenchHazelnut.jpg",
+    "img": "https://raw.githubusercontent.com/AhmedKhalilFED/Al-Fayomi/refs/heads/main/HazelnutFrenchCan.jpg",
     "category": "CAN",
     "weight": "1/4 KG",
-    "desc": "Rich coffee blend and delicious creamer in your favorite hazelnut flavor."
+    "desc": "Rich coffee blend and delicious creamer in your favorite hazelnut flavor.",
+    "lra": "no",
+    "type": "can"
   }
 ]
