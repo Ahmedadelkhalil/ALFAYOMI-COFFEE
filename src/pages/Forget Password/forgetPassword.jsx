@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./forgetPassword.css";
-import resetPassImg from "../../assets/sources/Reset password.svg";
 import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet";
 // FORM VALIDATION
@@ -45,7 +44,11 @@ const ForgetPassword = () => {
       </Helmet>
       <div className="resetPassword_container row">
         <div className="resetPassword_leftSide col-md-6 text-center text-md-end">
-          <img src={resetPassImg} alt="reset Password img" className="w-100" />
+          <img
+            src="https://raw.githubusercontent.com/Ahmedadelkhalil/ALFAYOMI-COFFEE/refs/heads/master/src/assets/sources/Reset%20password.png"
+            alt="reset Password img"
+            className="w-100"
+          />
         </div>
         <div className="resetPassword_rightSide col-md-6 pt-3 d-flex flex-column justify-content-center align-items-center align-items-md-start">
           <div>
