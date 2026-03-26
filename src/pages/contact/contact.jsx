@@ -10,10 +10,6 @@ import * as Yup from "yup";
 import { Toast } from "bootstrap";
 // ALERT
 import Alert from "../../global/alert/alert";
-// ICONS
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye } from "@fortawesome/free-solid-svg-icons";
-import { faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 // MAP
 import Map from "./map/map";
 
@@ -21,10 +17,11 @@ const Contact = () => {
   const validationSchema = Yup.object().shape({
     name: Yup.string().required("Name is Required"),
     email: Yup.string().email("Invalid Email").required("Email Is Required"),
-    password: Yup.string()
-      .required("Password Is Required")
-      .min(8, "password length must be From 8 - 10")
-      .max(10, "password length must be From 8 - 10"),
+    phone: Yup.string()
+      .required("Egypt Phone Number is Required")
+      .matches(/^(\+?20)?1[0125]\d{8}$/, "Enter a valid Egypt phone number")
+      .min(11, "Phone number must be 11 digits")
+      .max(14, "Phone number must be 11 digits with optional +20 prefix"),
     msg: Yup.string().required("Write Your Message Please"),
   });
 
@@ -32,7 +29,7 @@ const Contact = () => {
     initialValues: {
       name: "",
       email: "",
-      password: "",
+      phone: "",
       msg: "",
     },
     validationSchema: validationSchema,
@@ -41,9 +38,8 @@ const Contact = () => {
       handleAlert();
       values.name = "";
       values.email = "";
-      values.password = "";
+      values.phone = "";
       values.msg = "";
-      setShowPass(false);
     },
   });
 
@@ -56,21 +52,22 @@ const Contact = () => {
     toast.show();
   };
 
-  // handle show password While Clicking Eye Iocn
-  const [showPass, setShowPass] = useState(false);
-
   // CURRENT DATE
   const currentDate = new Date().getFullYear();
 
   return (
     <>
       <Helmet>
-        <title>PRIMECUT | CONTACT</title>
+        <title>ALFAYOMI | CONTACT</title>
       </Helmet>
       <div className="contactPage_container row">
         <div className="col-md-6 contact-leftSide">
           <span>contact us</span>
           <h1>let's be in touch</h1>
+          <img
+            src="https://raw.githubusercontent.com/Ahmedadelkhalil/ALFAYOMI-COFFEE/refs/heads/master/src/assets/logo/footer-logo.png"
+            alt="ALFAYOMI COFFEE LOGO"
+          />
         </div>
         <div className="col-md-6 contact-rightSide">
           <p>
@@ -104,31 +101,16 @@ const Contact = () => {
               )}
             </div>
             <div>
-              <label htmlFor="userPass">password *</label>
-              <div className="position-relative contact-pass-blockField d-flex align-items-center">
-                <input
-                  type={`${showPass ? "text" : "password"}`}
-                  name="userPass"
-                  id="userPass"
-                  placeholder="Enter Your Password"
-                  {...formik.getFieldProps("password")}
-                />
-                {showPass ? (
-                  <FontAwesomeIcon
-                    icon={faEye}
-                    className={`position-absolute`}
-                    onClick={() => setShowPass(false)}
-                  />
-                ) : (
-                  <FontAwesomeIcon
-                    icon={faEyeSlash}
-                    className={`position-absolute`}
-                    onClick={() => setShowPass(true)}
-                  />
-                )}
-              </div>
-              {formik.touched.password && formik.errors.password && (
-                <div className="text-danger">{formik.errors.password}</div>
+              <label htmlFor="userPhone">Phone Number *</label>
+              <input
+                type="tel"
+                name="userPhone"
+                id="userPhone"
+                placeholder="Enter Your Number example: +201025521486"
+                {...formik.getFieldProps("phone")}
+              />
+              {formik.touched.phone && formik.errors.phone && (
+                <div className="text-danger">{formik.errors.phone}</div>
               )}
             </div>
             <div>
@@ -152,14 +134,14 @@ const Contact = () => {
           </form>
         </div>
         <Map />
-        <div className="text-center main-color-green mb-5">
+        <div className="text-center main-labels-color mb-5">
           <span>{`©${currentDate}`}</span>
           <span>
             {" "}
             <Link
               to={`https://github.com/Ahmedadelkhalil`}
               target="_blank"
-              className="main-color-green text-decoration-underline"
+              className="main-labels-color text-decoration-underline"
             >
               Ahmed Adel
             </Link>{" "}

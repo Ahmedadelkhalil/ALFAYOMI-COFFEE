@@ -15,7 +15,7 @@
 }
 .signIn-leftSide h3 {
   text-transform: uppercase;
-  color: var(--main-color-green);
+  color: var(--main-labels-color);
   letter-spacing: 1px;
 }
 .signIn-leftSide {
@@ -39,13 +39,13 @@
 }
 .signIn-form {
   max-width: 600px !important;
-  border: 2px solid var(--main-color-green);
+  border: 2px solid var(--main-labels-color);
   padding: 20px 10px !important;
 }
 .signIn-rightSide h4 {
   text-align: center;
   text-transform: uppercase;
-  color: var(--main-color-green);
+  color: var(--main-labels-color);
 }
 .signIn-inputs-container {
   margin: 20px 0 10px !important;
@@ -54,7 +54,7 @@
   border: none;
   outline: none;
   padding: 7px 10px !important;
-  border: 1px solid var(--main-color-green);
+  border: 1px solid var(--main-labels-color);
 }
 .signIn-inputs-container > div:nth-child(1) {
   margin-bottom: 10px !important;
@@ -69,13 +69,13 @@
 }
 .signIn-inputs-container > div:nth-child(2) div button svg {
   font-size: 16px;
-  color: var(--main-color-green);
+  color: var(--main-labels-color);
   position: absolute;
   right: 10px;
   top: 10px;
 }
 .signIn-inputs-container input::placeholder {
-  color: var(--main-color-green);
+  color: var(--main-labels-color);
 }
 .signIn-rightSide form > div:nth-child(2) {
   margin-bottom: 20px !important;
@@ -100,7 +100,7 @@
   background: transparent;
 }
 .signIn-rightSide form > div:nth-child(2) button a {
-  color: var(--main-color-green);
+  color: var(--main-labels-color);
 }
 .signIn-rightSide form > div:nth-child(3) > button,
 .signIn-rightSide form > div:nth-child(3) > a button {
@@ -110,12 +110,12 @@
 }
 .signIn-rightSide form > div:nth-child(3) > a button {
   width: 100%;
-  background-color: #21372bcc;
+  background-color: var(--bg-dark-brown);
   color: var(--main-color-white);
 }
 .signIn-rightSide form > div:nth-child(3) > button {
   margin-bottom: 20px !important;
-  background-color: var(--main-color-green);
+  background-color: var(--main-labels-color);
   color: var(--main-color-white);
 }
 .signIn-rightSide form > div:nth-child(3) > button,
@@ -127,10 +127,10 @@
   -o-transition: all 0.3s ease;
 }
 .signIn-rightSide form > div:nth-child(3) > button:hover {
-  background-color: #21372bcc;
+  background-color: var(--bg-dark-brown);
 }
 .signIn-rightSide form > div:nth-child(3) > a button:hover {
-  background-color: var(--main-color-green);
+  background-color: var(--main-labels-color);
 }
 /* ---------------- RESPONSIVENESS ---------------- */
 /* XS DEVICES */

@@ -41,7 +41,7 @@ const ForgetPassword = () => {
   return (
     <>
       <Helmet>
-        <title>PRIMECUT | Reset Password</title>
+        <title>ALFAYOMI | Reset Password</title>
       </Helmet>
       <div className="resetPassword_container row">
         <div className="resetPassword_leftSide col-md-6 text-center text-md-end">

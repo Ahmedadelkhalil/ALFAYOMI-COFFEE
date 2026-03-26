@@ -58,12 +58,12 @@ const SignIn = () => {
   return (
     <>
       <Helmet>
-        <title>PRIMECUT | SIGN IN</title>
+        <title>ALFAYOMI | SIGN IN</title>
       </Helmet>
       <div className="signIn-container row p-0 p-md-5">
         <div className="col-12 signIn-leftSide mb-5 text-center text-md-start mt-5">
-          <h3>primecut</h3>
-          <h3>simply great burgers and fries</h3>
+          <h3>ALFAYOMI COFFEE</h3>
+          <h3>simply great coffee and beverage</h3>
         </div>
         <div className="col-12 signIn-rightSide mb-5">
           <div className="signIn-form">

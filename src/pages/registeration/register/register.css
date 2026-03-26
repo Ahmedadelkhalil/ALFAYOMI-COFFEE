@@ -19,7 +19,7 @@
 .registerTitle_container {
   text-transform: uppercase;
   margin-bottom: 20px !important;
-  color: var(--main-color-green);
+  color: var(--main-labels-color);
 }
 .registerTitle_container h1:nth-child(1) {
   font-size: 40px;
@@ -27,7 +27,7 @@
 }
 .registerForm_container {
   width: 600px;
-  border: 2px solid var(--main-color-green);
+  border: 2px solid var(--main-labels-color);
   padding: 20px 10px !important;
 }
 .registerForm_container form > div {
@@ -38,18 +38,18 @@
   border: none;
   outline: none;
   padding: 7px 10px !important;
-  border: 1px solid var(--main-color-green);
+  border: 1px solid var(--main-labels-color);
 }
 .registerForm_container input::placeholder {
-  color: var(--main-color-green);
+  color: var(--main-labels-color);
 }
 .registerForm_container a {
   text-decoration: underline !important;
 }
 .registerForm_container .signUp_btn button {
-  border: 1px solid var(--main-color-green);
+  border: 1px solid var(--main-labels-color);
   outline: none;
-  background-color: var(--main-color-green);
+  background-color: var(--main-labels-color);
   color: var(--main-color-white);
   text-transform: uppercase;
   width: 200px;
@@ -76,7 +76,7 @@
   background: transparent;
 }
 .registerForm_container div:nth-child(4) button svg {
-  color: var(--main-color-green);
+  color: var(--main-labels-color);
 }
 /* ------------------ RESPONSIVENESS ------------------ */
 /* XS DEVICES */

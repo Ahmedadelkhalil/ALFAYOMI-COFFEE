@@ -104,7 +104,7 @@ const Faqs = () => {
               <p className="answer">- Elnady street front of Tanta Club.</p>
             </div>
             <div className="faq_block_rightSide">
-              <p className="question">- Elmahalla Elkobra Branches</p>
+              <p className="question">Elmahalla Elkobra Branches</p>
               <p className="answer">- 43 Reda Hafez street.</p>
               <p className="answer">
                 - Elsbaa banat next to Ghazl El Mahallah.

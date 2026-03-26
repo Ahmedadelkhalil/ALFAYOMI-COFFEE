@@ -68,11 +68,11 @@ const Register = () => {
       </Helmet>
       <div className="register_container d-flex flex-column justify-content-center align-items-center p-0 p-md-5">
         <div className="registerTitle_container mt-5 mt-md-5 text-center">
-          <h1 className="mb-3">PRIMECUT</h1>
-          <h1 className="mb-3">SIMPLY GREAT BURGERS AND FRIES</h1>
+          <h1 className="mb-3">ALFAYOMI COFFEE</h1>
+          <h1 className="mb-3">SIMPLY GREAT COFFEE AND BEVERAGE</h1>
         </div>
         <div className="registerForm_container mb-5">
-          <h4 className="text-center mb-3 text-uppercase main-color-green">
+          <h4 className="text-center mb-3 text-uppercase main-labels-color">
             sign up
           </h4>
           <form action="#" onSubmit={formik.handleSubmit}>
@@ -127,7 +127,7 @@ const Register = () => {
             <div className="text-center">
               <p>
                 Already a member?{" "}
-                <NavLink to="/signIn" className="main-color-green fw-semibold">
+                <NavLink to="/signIn" className="main-labels-color fw-semibold">
                   Log in
                 </NavLink>
               </p>

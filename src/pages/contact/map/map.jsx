@@ -5,13 +5,13 @@ import { Icon } from "leaflet";
 import "leaflet/dist/leaflet.css";
 
 const Map = () => {
-  const position = [21.599, 39.1599];
+  const position = [30.9839, 31.1719];
   return (
     <div className="contact-map-container mb-4 mt-2">
-      <h1 className="text-uppercase main-color-green text-center mb-3">
+      <h1 className="text-uppercase main-labels-color text-center mb-3">
         our location
       </h1>
-      <MapContainer center={position} zoom={12} scrollWheelZoom={false}>
+      <MapContainer center={position} zoom={14} scrollWheelZoom={false}>
         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
         <Marker
           position={position}
