@@ -6,7 +6,7 @@
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--main-color-green);
+  color: var(--main-labels-color);
 }
 .checkout-PathSec nav .prevLink,
 .checkout-PathSec nav .currLink {
@@ -16,7 +16,7 @@
   color: rgb(119, 118, 118);
 }
 .checkout-PathSec nav .currLink {
-  color: var(--main-color-green);
+  color: var(--main-labels-color);
 }
 .checkOut-main-sec {
   display: flex;
@@ -27,14 +27,14 @@
   text-transform: uppercase;
   font-size: 25px;
   margin-bottom: 20px !important;
-  color: var(--main-color-green);
+  color: var(--main-labels-color);
 }
 .checkout-main-leftSide form > div {
   margin-bottom: 10px !important;
 }
 .checkout-main-leftSide input,
 .checkout-main-leftSide textarea {
-  border: 1px solid var(--main-color-green);
+  border: 1px solid var(--main-labels-color);
   padding: 4px 10px !important;
   outline: none;
   background: transparent;
@@ -43,7 +43,7 @@
 }
 .checkoutPage-container input::placeholder,
 .checkoutPage-container textarea::placeholder {
-  color: var(--main-color-green);
+  color: var(--main-labels-color);
 }
 .checkout-main-rightSide table {
   min-width: 450px;
@@ -51,11 +51,11 @@
 }
 .checkout-main-rightSide table tr th {
   text-transform: uppercase;
-  color: var(--main-color-green);
+  color: var(--main-labels-color);
 }
 .checkout-main-rightSide table tr,
 .checkout-main-rightSide table tr th {
-  border-bottom: 1px solid var(--main-color-green);
+  border-bottom: 1px solid var(--main-labels-color);
   padding-bottom: 5px !important;
 }
 .checkout-order-sec table tr img {
@@ -71,7 +71,7 @@
   border: none;
   outline: none;
   background: transparent;
-  color: var(--main-color-green);
+  color: var(--main-labels-color);
   font-size: 13px;
 }
 .checkout-order-sec table tr:last-child td {
@@ -85,14 +85,14 @@
 .check-order-del-sec {
   padding-top: 20px !important;
   text-transform: capitalize;
-  color: var(--main-color-green);
+  color: var(--main-labels-color);
 }
 .check-order-total-sec .t-title {
   color: rgb(107, 107, 107);
   font-weight: 500;
 }
 .check-order-total-sec .t-cost {
-  color: var(--main-color-green);
+  color: var(--main-labels-color);
   font-weight: 900;
 }
 .checkout-bottom-nav-sec button {
@@ -101,9 +101,9 @@
   background: transparent;
   text-transform: uppercase;
   font-size: 16px;
-  border-bottom: 1px solid var(--main-color-green);
+  border-bottom: 1px solid var(--main-labels-color);
   font-weight: 900;
 }
 .checkout-bottom-nav-sec button a {
-  color: var(--main-color-green);
+  color: var(--main-labels-color);
 }

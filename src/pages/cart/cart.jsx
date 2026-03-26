@@ -133,7 +133,7 @@ const Cart = () => {
                           >
                             <FontAwesomeIcon icon={faAngleLeft} />
                           </button>
-                          <span className="main-color-green">
+                          <span className="main-labels-color">
                             {pro.quantity}
                           </span>
                           <button
@@ -173,14 +173,14 @@ const Cart = () => {
                 <tfoot>
                   <tr>
                     <td className="d-flex align-items-center py-3">
-                      <span className="dest-delivery main-color-green">
+                      <span className="dest-delivery main-labels-color">
                         delivery
                       </span>
-                      <span className="dest-title main-color-green text-uppercase">
+                      <span className="dest-title main-labels-color text-uppercase">
                         Jeddah
                       </span>
                     </td>
-                    <td colSpan={2} className="dest-info main-color-green">
+                    <td colSpan={2} className="dest-info main-labels-color">
                       from 5 to 8 km delivery
                     </td>
                     <td className="cartTable-rm-pro-btn">
@@ -191,7 +191,7 @@ const Cart = () => {
                 </tfoot>
               </table>
             </div>
-            <div className="subtotalSection d-flex justify-content-end main-color-green mt-3">
+            <div className="subtotalSection d-flex justify-content-end main-labels-color mt-3">
               <span>{`Gross Total : ${totalCost} L.E`}</span>
             </div>
             <div className="rmFun_checkPage_sec d-flex justify-content-end">

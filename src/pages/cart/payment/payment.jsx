@@ -73,7 +73,7 @@ const Payment = () => {
   return (
     <>
       <Helmet>
-        <title>PRIMECUT | PAYMENT</title>
+        <title>ALFAYOMI | PAYMENT</title>
       </Helmet>
       <div className="paymentPage-container px-4 py-5">
         <div className="payment-topNav-sec">
@@ -294,7 +294,7 @@ const Payment = () => {
                           </td>
                           <td>
                             <NavLink
-                              className="main-color-green"
+                              className="main-labels-color"
                               to={`/productDetails/:${pro.name?.replaceAll(
                                 " ",
                                 "-",
@@ -316,7 +316,7 @@ const Payment = () => {
                             >
                               <FontAwesomeIcon icon={faAngleLeft} />
                             </button>
-                            <span className="main-color-green">
+                            <span className="main-labels-color">
                               {pro.quantity}
                             </span>
                             <button
@@ -352,14 +352,14 @@ const Payment = () => {
               </div>
             </div>
             <div className="d-flex justify-content-between align-items-center my-3">
-              <h5 className="text-uppercase main-color-green">delivery</h5>
-              <p className="text-capitalize main-color-green">
+              <h5 className="text-uppercase main-labels-color">delivery</h5>
+              <p className="text-capitalize main-labels-color">
                 from 5 to 8 km delivery
               </p>
             </div>
             <div className="d-flex justify-content-between align-items-center my-3">
               <h5 className="text-uppercase payment-t-title">total :</h5>
-              <p className="text-capitalize fw-bold main-color-green">
+              <p className="text-capitalize fw-bold main-labels-color">
                 {paymentopDone || products.length === 0
                   ? `$${Number(Number(total) + 0).toFixed(2)}`
                   : `$${Number(Number(total) + 10).toFixed(2)}`}

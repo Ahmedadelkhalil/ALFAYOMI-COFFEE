@@ -7,7 +7,7 @@ const ErrorPage = () => {
   return (
     <>
       <Helmet>
-        <title>PRIMECUT | Error 404</title>
+        <title>ALFAYOMI | Error 404</title>
       </Helmet>
       <div className="errorPage_container d-flex justify-content-center align-items-center">
         <div className="d-flex flex-column justify-content-center align-items-center">

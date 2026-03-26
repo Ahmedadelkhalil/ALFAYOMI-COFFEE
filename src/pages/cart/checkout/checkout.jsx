@@ -107,7 +107,7 @@ const Checkout = () => {
   return (
     <>
       <Helmet>
-        <title>PRIMECUT | CHECKOUT</title>
+        <title>ALFAYOMI | CHECKOUT</title>
       </Helmet>
       <div className="checkoutPage-container">
         <div className="checkout-PathSec px-4 py-5">
@@ -227,9 +227,9 @@ const Checkout = () => {
                             <img src={pro.img} alt={pro.name} />
                           </NavLink>
                         </td>
-                        <td className="main-color-green">
+                        <td className="main-labels-color">
                           <NavLink
-                            className="main-color-green text-uppercase"
+                            className="main-labels-color text-uppercase"
                             to={`/productDetails/:${pro.name?.replaceAll(
                               " ",
                               "-",
@@ -251,7 +251,7 @@ const Checkout = () => {
                           >
                             <FontAwesomeIcon icon={faAngleLeft} />
                           </button>
-                          <span className="main-color-green">
+                          <span className="main-labels-color">
                             {pro.quantity}
                           </span>
                           <button
