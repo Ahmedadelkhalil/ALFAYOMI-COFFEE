@@ -377,12 +377,14 @@
     font-size: 25px !important;
   }
 }
+@media (max-width: 500px) {
+  .pro-info span {
+    font-size: 10px !important;
+  }
+}
 @media (min-width: 340px) and (max-width: 400px) {
   .large-img-of-left-side img {
     width: 200px !important;
-  }
-  .pro-info span {
-    font-size: 10px !important;
   }
 }
 /* Medium devices */

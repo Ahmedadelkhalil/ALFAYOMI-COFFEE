@@ -12,7 +12,7 @@ const Alert = React.forwardRef((props, ref) => {
         ref={ref}
       >
         <div className="toast-header">
-          <strong className="me-auto main-labels-color">PRIMECUT</strong>
+          <strong className="me-auto main-labels-color">ALFAYOMI COFFEE</strong>
           <small className="main-labels-color">Just Now</small>
           <button type="button" data-bs-dismiss="toast" aria-label="Close">
             X

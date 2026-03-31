@@ -10,7 +10,7 @@
   margin-left: 50px !important;
 }
 .menu_header_right h1 {
-  font-size: 25px;
+  font-size: 35px !important;
   line-height: 1.6;
 }
 .menu_header_left h1 span {
@@ -19,6 +19,10 @@
 }
 .menu_header_right {
   padding-top: 9px !important;
+  justify-content: center !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .and_section {
   margin-right: 10px !important;
@@ -96,9 +100,9 @@
     font-size: 28px;
   }
   .menu_header_right h1 {
-    font-size: 13px;
+    font-size: 20px !important;
     line-height: 1.4;
-    margin-left: 20px !important;
+    margin-left: 40px !important;
   }
   .category-btns button {
     margin: 0 !important;

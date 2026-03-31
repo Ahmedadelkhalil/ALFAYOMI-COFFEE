@@ -50,12 +50,12 @@ const LargeCard = ({ largeProductCardInfo }) => {
             <span className="fw-bold text-capitalize">{`salt - ${largeProductCardInfo.salt}g`}</span>
           </div>
         ) : largeProductCardInfo.category === "CAN" ? (
-          <div className="pro-info d-flex justify-content-between align-items-center">
+          <div className="pro-info d-flex justify-content-center align-items-center">
             <span className="fw-bold text-capitalize">{`${largeProductCardInfo.weight} - ${largeProductCardInfo.price} L.E`}</span>
           </div>
         ) : largeProductCardInfo.category === "DRINKS" ? (
           largeProductCardInfo.sizeM || largeProductCardInfo.sizeL ? (
-            <div className="pro-info d-flex justify-content-start align-items-center">
+            <div className="pro-info d-flex justify-content-center align-items-center">
               <span className="fw-bold text-capitalize mx-2">{`Size Medium- ${largeProductCardInfo.sizeM} L.E`}</span>
               <span className="fw-bold text-capitalize">{`Size Large- ${largeProductCardInfo.sizeL} L.E`}</span>
             </div>

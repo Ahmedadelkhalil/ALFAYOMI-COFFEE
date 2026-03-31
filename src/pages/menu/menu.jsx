@@ -36,18 +36,10 @@ const Menu = () => {
               fontWeight: "400",
             }}
           >
-            <h1 style={{ letterSpacing: "2px", fontSize: "35px" }}>
-              since 1938
-            </h1>
-            <h1 style={{ letterSpacing: "2px", fontSize: "35px" }}>
-              alfayomi coffee
-            </h1>
-            <h1 style={{ letterSpacing: "2px", fontSize: "35px" }}>
-              has been in
-            </h1>
-            <h1 style={{ letterSpacing: "2px", fontSize: "35px" }}>
-              coffee industry
-            </h1>
+            <h1 style={{ letterSpacing: "2px" }}>since 1938</h1>
+            <h1 style={{ letterSpacing: "2px" }}>alfayomi coffee</h1>
+            <h1 style={{ letterSpacing: "2px" }}>has been in</h1>
+            <h1 style={{ letterSpacing: "2px" }}>coffee industry</h1>
           </div>
         </div>
         {productsStatus === "Pending" && (

@@ -58,7 +58,7 @@ const BestDeal = () => {
           modules={[Autoplay]}
           loop={true}
           loopAdditionalSlides={1}
-          cssMode={false}
+          cssMode={true}
           updateOnWindowResize={true}
           grabCursor={true}
           observer={true}
