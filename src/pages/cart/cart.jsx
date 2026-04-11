@@ -19,7 +19,7 @@ import {
 const Cart = () => {
   const dispatch = useDispatch();
   const cartProducts = useSelector((state) => state.cart.cartItems);
-  const totalCost = useSelector((state) => state.cart.totalCost);
+  let totalCost = useSelector((state) => state.cart.totalCost);
 
   console.log(totalCost);
   return (
@@ -118,8 +118,8 @@ const Cart = () => {
                         </td>
                         <td className="cartTable-price-sec">
                           {pro.price === undefined
-                            ? `$${pro?.oneprice}`
-                            : `$${pro?.price}`}
+                            ? `${pro?.oneprice} L.E`
+                            : `${pro?.price} L.E`}
                         </td>
                         <td className="cartTable-qnt-sec">
                           <button
@@ -177,7 +177,7 @@ const Cart = () => {
                         delivery
                       </span>
                       <span className="dest-title main-labels-color text-uppercase">
-                        Jeddah
+                        ElMahalla
                       </span>
                     </td>
                     <td colSpan={2} className="dest-info main-labels-color">
@@ -186,13 +186,13 @@ const Cart = () => {
                     <td className="cartTable-rm-pro-btn">
                       <button>self pickup</button>
                     </td>
-                    <td className="cartTable-tQnt-sec">$10.00</td>
+                    <td className="cartTable-tQnt-sec">30.00 L.E</td>
                   </tr>
                 </tfoot>
               </table>
             </div>
             <div className="subtotalSection d-flex justify-content-end main-labels-color mt-3">
-              <span>{`Gross Total : ${totalCost} L.E`}</span>
+              <span>{`Gross Total : ${+totalCost + 30} L.E`}</span>
             </div>
             <div className="rmFun_checkPage_sec d-flex justify-content-end">
               <button

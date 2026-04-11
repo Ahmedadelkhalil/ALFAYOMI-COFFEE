@@ -294,7 +294,7 @@ const Checkout = () => {
               <p className="t-cost">
                 {cartProducts.length === 0
                   ? `$${Number(Number(total) + 0).toFixed(2)}`
-                  : `$${Number(Number(total) + 10).toFixed(2)}`}
+                  : `$${Number(Number(total) + 30).toFixed(2)}`}
               </p>
             </div>
           </div>

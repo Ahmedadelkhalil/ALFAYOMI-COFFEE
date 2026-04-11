@@ -62,7 +62,7 @@
   font-weight: 500;
 }
 .registerForm_container .signUp_btn button:hover {
-  background-color: #21372bcc;
+  background-color: var(--bg-dark-brown);
 }
 .registerForm_container div:nth-child(4) {
   position: relative !important;
