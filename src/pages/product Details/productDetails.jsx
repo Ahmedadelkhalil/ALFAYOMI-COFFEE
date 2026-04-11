@@ -473,7 +473,7 @@ const ProductDetails = () => {
                               className="w-100"
                             />
                           </NavLink>
-                          <p className="fw-bold">
+                          <p className="fw-bold text-center">
                             <NavLink
                               className="main-labels-color"
                               to={`/productDetails/:${product.title?.replaceAll(
@@ -481,7 +481,9 @@ const ProductDetails = () => {
                                 "-",
                               )}`}
                               state={{ from: { productInfo } }}
-                              style={{ textTransform: "uppercase" }}
+                              style={{
+                                textTransform: "uppercase",
+                              }}
                             >
                               {product.title}
                             </NavLink>

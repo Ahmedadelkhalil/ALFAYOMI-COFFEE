@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 // Import Swiper components & Modules
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 
 const BestDeal = () => {
+  const navigate = useNavigate();
   const [categoryData, setCategoryData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -57,26 +58,27 @@ const BestDeal = () => {
         <Swiper
           modules={[Autoplay]}
           loop={true}
-          loopAdditionalSlides={1}
-          cssMode={true}
-          updateOnWindowResize={true}
-          grabCursor={true}
-          observer={true}
-          observeParents={true}
           autoplay={{
-            delay: 3000,
+            delay: 500,
             disableOnInteraction: false,
             pauseOnMouseEnter: false,
-            waitForTransition: true,
           }}
-          speed={600}
+          updateOnWindowResize={true}
+          speed={1500}
           breakpoints={{
-            0: { slidesPerView: 1, spaceBetween: 10 },
-            640: { slidesPerView: 3, spaceBetween: 10 },
-            768: { slidesPerView: 4, spaceBetween: 10 },
-            1024: { slidesPerView: 5, spaceBetween: 10 },
+            640: {
+              slidesPerView: 3,
+              spaceBetween: 10,
+            },
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 10,
+            },
+            1600: {
+              slidesPerView: 5,
+              spaceBetween: 10,
+            },
           }}
-          className="my-custom-swiper"
         >
           {categoryData.map((product) => {
             const productInfo = {
@@ -106,34 +108,47 @@ const BestDeal = () => {
 
             return (
               <SwiperSlide key={product.id}>
-                <div className="category-holder w-100">
-                  <NavLink
-                    to={`/productDetails/:${product.title?.replaceAll(" ", "-")}`}
-                    state={{ from: { productInfo } }}
+                <div
+                  className="category-holder w-100"
+                  role="button"
+                  tabIndex={0}
+                  style={{ cursor: "pointer" }}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    navigate(
+                      `/productDetails/:${product.title?.replaceAll(" ", "-")}`,
+                      {
+                        state: { from: { productInfo } },
+                      },
+                    );
+                  }}
+                  onPointerDown={(e) => e.stopPropagation()}
+                  onTouchStart={(e) => e.stopPropagation()}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                      e.stopPropagation();
+                      navigate(
+                        `/productDetails/:${product.title?.replaceAll(" ", "-")}`,
+                        {
+                          state: { from: { productInfo } },
+                        },
+                      );
+                    }
+                  }}
+                >
+                  <img src={product.img} alt={product.title} loading="eager" />
+                  <p
+                    style={{
+                      width: "180px",
+                      textAlign: "center",
+                      whiteSpace: "nowrap",
+                      overflow: "hidden",
+                      textOverflow: "ellipsis",
+                      textTransform: "uppercase",
+                    }}
                   >
-                    <img
-                      src={product.img}
-                      alt={product.title}
-                      loading="eager"
-                    />
-                  </NavLink>
-                  <NavLink
-                    to={`/productDetails/:${product.title?.replaceAll(" ", "-")}`}
-                    state={{ from: { productInfo } }}
-                  >
-                    <p
-                      style={{
-                        width: "180px",
-                        textAlign: "center",
-                        whiteSpace: "nowrap",
-                        overflow: "hidden",
-                        textOverflow: "ellipsis",
-                        textTransform: "uppercase",
-                      }}
-                    >
-                      {product.title}
-                    </p>
-                  </NavLink>
+                    {product.title}
+                  </p>
                 </div>
               </SwiperSlide>
             );
