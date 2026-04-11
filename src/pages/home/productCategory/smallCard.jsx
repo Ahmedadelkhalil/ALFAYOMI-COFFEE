@@ -1,6 +1,7 @@
+import { memo } from "react";
 import { NavLink } from "react-router-dom";
 
-const SmallCard = ({ smallProductCardInfo }) => {
+const SmallCard = memo(({ smallProductCardInfo }) => {
   return (
     <>
       <div className="sm-box-logo-label d-flex justify-content-end">
@@ -65,6 +66,7 @@ const SmallCard = ({ smallProductCardInfo }) => {
       </div>
     </>
   );
-};
+});
 
+SmallCard.displayName = 'SmallCard';
 export default SmallCard;

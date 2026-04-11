@@ -1,3 +1,4 @@
+import { memo } from "react";
 import "./footer.css";
 import { Link, NavLink } from "react-router-dom";
 // ICONS
@@ -10,7 +11,7 @@ import {
   workingHours,
 } from "../../assets/links/footerLinks";
 
-const Footer = () => {
+const Footer = memo(() => {
   const currentDate = new Date().getFullYear();
   return (
     <footer className="footer-container px-4 py-5 row">
@@ -87,6 +88,7 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
+});
 
+Footer.displayName = 'Footer';
 export default Footer;

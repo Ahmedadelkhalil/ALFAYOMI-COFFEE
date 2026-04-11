@@ -1,6 +1,7 @@
+import { memo } from "react";
 import { NavLink } from "react-router-dom";
 
-const LargeCard = ({ largeProductCardInfo }) => {
+const LargeCard = memo(({ largeProductCardInfo }) => {
   return (
     <>
       <div className=" d-flex justify-content-end">
@@ -95,6 +96,7 @@ const LargeCard = ({ largeProductCardInfo }) => {
       </div>
     </>
   );
-};
+});
 
+LargeCard.displayName = 'LargeCard';
 export default LargeCard;

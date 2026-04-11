@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, memo } from "react";
 import { NavLink } from "react-router-dom";
 import "./header.css";
 // ICONS
@@ -12,7 +12,7 @@ import { useSelector } from "react-redux";
 // Nav Links
 import navLinks from "../../assets/links/navLinks";
 
-const Header = () => {
+const Header = memo(() => {
   const [shownav, setShownav] = useState(false);
   const addedProductsNum = useSelector((state) => state.cart.cartItems.length);
   return (
@@ -94,6 +94,7 @@ const Header = () => {
       </div>
     </header>
   );
-};
+});
 
+Header.displayName = 'Header';
 export default Header;

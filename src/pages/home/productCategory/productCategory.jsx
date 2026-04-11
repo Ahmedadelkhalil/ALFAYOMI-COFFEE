@@ -1,58 +1,54 @@
 // REDUX
-import { useSelector } from "react-redux";
+import { useSelector, shallowEqual } from "react-redux";
+import { useMemo, memo } from "react";
 // Small Card Component
 import SmallCard from "./smallCard";
 // Large Card Component
 import LargeCard from "./largeCard";
 
-const ProductCategory = ({ cat, bannerLabel }) => {
-  let productOfSameCategory = [];
-  // REDUX
-  const productsStatus = useSelector((state) => state.products.status);
-  const productsData = useSelector((state) => state.products.items);
+const ProductCategory = memo(({ cat, bannerLabel }) => {
+  // REDUX - Using shallowEqual to prevent unnecessary re-renders
+  const productsStatus = useSelector((state) => state.products.status, shallowEqual);
+  const productsData = useSelector((state) => state.products.items, shallowEqual);
 
-  for (let i = 0; i < productsData?.length; i++) {
-    if (productsData[i].category === cat) {
-      productOfSameCategory.push(productsData[i]);
-    }
-  }
-  productOfSameCategory.length = 5;
-  const largeProductCard = {};
-  const smallProductCard_01 = {};
-  const smallProductCard_02 = {};
-  const smallProductCard_03 = {};
-  const smallProductCard_04 = {};
-  const objectsName = [
-    largeProductCard,
-    smallProductCard_01,
-    smallProductCard_02,
-    smallProductCard_03,
-    smallProductCard_04,
-  ];
-  for (let i = 0; i < productOfSameCategory.length; i++) {
-    objectsName[i].name = productOfSameCategory[i]?.title;
-    objectsName[i].id = productOfSameCategory[i]?.id;
-    objectsName[i].img = productOfSameCategory[i]?.img;
-    objectsName[i].kcal = productOfSameCategory[i]?.kcal;
-    objectsName[i].fat = productOfSameCategory[i]?.fat;
-    objectsName[i].saturates = productOfSameCategory[i]?.saturates;
-    objectsName[i].sugars = productOfSameCategory[i]?.sugars;
-    objectsName[i].salt = productOfSameCategory[i]?.salt;
-    objectsName[i].tomn = productOfSameCategory[i]?.tomn;
-    objectsName[i].rob3 = productOfSameCategory[i]?.rob3;
-    objectsName[i].nos = productOfSameCategory[i]?.nos;
-    objectsName[i].kilo = productOfSameCategory[i]?.kilo;
-    objectsName[i].weight = productOfSameCategory[i]?.weight;
-    objectsName[i].sizeM = productOfSameCategory[i]?.sizeM;
-    objectsName[i].sizeL = productOfSameCategory[i]?.sizeL;
-    objectsName[i].sizeS = productOfSameCategory[i]?.sizeS;
-    objectsName[i].sizeD = productOfSameCategory[i]?.sizeD;
-    objectsName[i].description = productOfSameCategory[i]?.desc;
-    objectsName[i].price = productOfSameCategory[i]?.price;
-    objectsName[i].category = productOfSameCategory[i]?.category;
-    objectsName[i].lra = productOfSameCategory[i]?.lra;
-    objectsName[i].type = productOfSameCategory[i]?.type;
-  }
+  // Memoize filtered products to prevent recalculation on every render
+  const productOfSameCategory = useMemo(() => {
+    return productsData?.filter((product) => product.category === cat).slice(0, 5) || [];
+  }, [productsData, cat]);
+
+  // Memoize mapped product objects
+  const mappedProducts = useMemo(() => {
+    return productOfSameCategory.map((product) => ({
+      name: product?.title,
+      id: product?.id,
+      img: product?.img,
+      kcal: product?.kcal,
+      fat: product?.fat,
+      saturates: product?.saturates,
+      sugars: product?.sugars,
+      salt: product?.salt,
+      tomn: product?.tomn,
+      rob3: product?.rob3,
+      nos: product?.nos,
+      kilo: product?.kilo,
+      weight: product?.weight,
+      sizeM: product?.sizeM,
+      sizeL: product?.sizeL,
+      sizeS: product?.sizeS,
+      sizeD: product?.sizeD,
+      description: product?.desc,
+      price: product?.price,
+      category: product?.category,
+      lra: product?.lra,
+      type: product?.type,
+    }));
+  }, [productOfSameCategory]);
+
+  const largeProductCard = mappedProducts[0] || {};
+  const smallProductCard_01 = mappedProducts[1] || {};
+  const smallProductCard_02 = mappedProducts[2] || {};
+  const smallProductCard_03 = mappedProducts[3] || {};
+  const smallProductCard_04 = mappedProducts[4] || {};
 
   const categoryTitle = `${bannerLabel}`;
 
@@ -128,5 +124,7 @@ const ProductCategory = ({ cat, bannerLabel }) => {
       )}
     </>
   );
-};
+});
+
+ProductCategory.displayName = 'ProductCategory';
 export default ProductCategory;

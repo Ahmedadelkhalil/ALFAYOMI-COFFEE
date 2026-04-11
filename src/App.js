@@ -5,16 +5,20 @@ import RoutesPage from "./routes/routes";
 // REDUX
 import { Provider } from "react-redux";
 import store from "./Redux/store";
+// ERROR BOUNDARY
+import ErrorBoundary from "./global/errorBoundary/ErrorBoundary";
 
 const App = () => {
   return (
     <div>
-      <HashRouter>
-        <Provider store={store}>
-          <RoutesPage />
-        </Provider>
-        <ScrollToTopBtn />
-      </HashRouter>
+      <ErrorBoundary>
+        <HashRouter>
+          <Provider store={store}>
+            <RoutesPage />
+          </Provider>
+          <ScrollToTopBtn />
+        </HashRouter>
+      </ErrorBoundary>
     </div>
   );
 };
