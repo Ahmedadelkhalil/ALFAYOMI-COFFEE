@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./css/contact.css";
 import Arrow from "../../assets/sources/Arrow.svg";
@@ -12,8 +12,14 @@ import { Toast } from "bootstrap";
 import Alert from "../../global/alert/alert";
 // MAP
 import Map from "./map/map";
+// EMAIL
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  // Initialize EmailJS once
+  useEffect(() => {
+    emailjs.init("mJltcnR7xye0I5OGv"); // Will replace this
+  }, []);
   const validationSchema = Yup.object().shape({
     name: Yup.string().required("Name is Required"),
     email: Yup.string().email("Invalid Email").required("Email Is Required"),
@@ -33,13 +39,38 @@ const Contact = () => {
       msg: "",
     },
     validationSchema: validationSchema,
-    onSubmit: (values) => {
-      setAlertMsg(`Your Message has been sent Successfuly ${values.name} :)`);
-      handleAlert();
-      values.name = "";
-      values.email = "";
-      values.phone = "";
-      values.msg = "";
+    onSubmit: async (values) => {
+      try {
+        // Show loading state
+        const submitButton = document.querySelector('button[type="submit"]');
+        submitButton.disabled = true;
+        submitButton.textContent = "Sending...";
+
+        // Send email using EmailJS
+        await emailjs.send("service_5218tot", "template_0ipl3x7", {
+          to_email: "ahmedkhalil4774@gmail.com",
+          name: values.name,
+          email: values.email,
+          phone: values.phone,
+          message: values.msg,
+        });
+
+        // Success
+        setAlertMsg(
+          `Your Message has been sent Successfully ${values.name} :)`,
+        );
+        formik.resetForm();
+        handleAlert();
+      } catch (error) {
+        console.error("Error:", error);
+        setAlertMsg("Error sending message. Please try again.");
+        handleAlert();
+      } finally {
+        // Restore button state
+        const submitButton = document.querySelector('button[type="submit"]');
+        submitButton.disabled = false;
+        submitButton.textContent = "send";
+      }
     },
   });
 

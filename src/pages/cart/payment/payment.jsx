@@ -361,8 +361,8 @@ const Payment = () => {
               <h5 className="text-uppercase payment-t-title">total :</h5>
               <p className="text-capitalize fw-bold main-labels-color">
                 {paymentopDone || products.length === 0
-                  ? `$${Number(Number(total) + 0).toFixed(2)}`
-                  : `$${Number(Number(total) + 30).toFixed(2)}`}
+                  ? `${Number(Number(total) + 0).toFixed(2)} L.E`
+                  : `${Number(Number(total) + 30).toFixed(2)} L.E`}
               </p>
             </div>
           </div>

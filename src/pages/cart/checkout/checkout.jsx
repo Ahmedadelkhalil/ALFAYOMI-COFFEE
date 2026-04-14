@@ -293,8 +293,8 @@ const Checkout = () => {
               <h5 className="t-title">TOTAL :</h5>
               <p className="t-cost">
                 {cartProducts.length === 0
-                  ? `$${Number(Number(total) + 0).toFixed(2)}`
-                  : `$${Number(Number(total) + 30).toFixed(2)}`}
+                  ? `${Number(Number(total) + 0).toFixed(2)} L.E`
+                  : `${Number(Number(total) + 30).toFixed(2)} L.E`}
               </p>
             </div>
           </div>
